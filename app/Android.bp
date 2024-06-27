@@ -23,13 +23,14 @@ android_app {
 
     overrides: [
         "Gallery",
-        "Gallery2",
         "Gallery3D",
         "GalleryNew3D",
     ],
 
     required: [
         "GlimpseFrameworksBaseOverlay",
+        "initial-package-stopped-states-org.lineageos.glimpse",
+        "preinstalled-packages-org.lineageos.glimpse",
     ],
 
     static_libs: [
@@ -59,4 +60,20 @@ android_app {
     optimize: {
         proguard_flags_files: ["proguard-rules.pro"],
     },
+}
+
+prebuilt_etc {
+    name: "initial-package-stopped-states-org.lineageos.glimpse",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "initial-package-stopped-states-org.lineageos.glimpse.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "preinstalled-packages-org.lineageos.glimpse",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "preinstalled-packages-org.lineageos.glimpse.xml",
+    filename_from_src: true,
 }

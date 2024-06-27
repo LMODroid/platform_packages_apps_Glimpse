@@ -16,7 +16,6 @@ import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.appbar.AppBarLayout
-import com.google.android.material.search.SearchBar
 import com.google.android.material.shape.MaterialShapeDrawable
 import org.lineageos.glimpse.R
 import org.lineageos.glimpse.ext.getViewProperty
@@ -25,16 +24,15 @@ import org.lineageos.glimpse.utils.MediaStoreBuckets
 
 /**
  * A fragment showing a search bar with categories.
- * Use the [SearchFragment.newInstance] factory method to
+ * Use the [LibraryFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class SearchFragment : Fragment(R.layout.fragment_search) {
+class LibraryFragment : Fragment(R.layout.fragment_library) {
     // Views
     private val appBarLayout by getViewProperty<AppBarLayout>(R.id.appBarLayout)
     private val favoritesAlbumListItem by getViewProperty<ListItem>(R.id.favoritesAlbumListItem)
     private val photosAlbumListItem by getViewProperty<ListItem>(R.id.photosAlbumListItem)
-    private val searchNestedScrollView by getViewProperty<NestedScrollView>(R.id.searchNestedScrollView)
-    private val searchBar by getViewProperty<SearchBar>(R.id.searchBar)
+    private val libraryNestedScrollView by getViewProperty<NestedScrollView>(R.id.libraryNestedScrollView)
     private val trashAlbumListItem by getViewProperty<ListItem>(R.id.trashAlbumListItem)
     private val videosAlbumListItem by getViewProperty<ListItem>(R.id.videosAlbumListItem)
 
@@ -55,12 +53,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
                 WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
             )
 
-            searchBar.updateLayoutParams<ViewGroup.MarginLayoutParams> {
-                leftMargin = insets.left
-                rightMargin = insets.right
-            }
-
-            searchNestedScrollView.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+            libraryNestedScrollView.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                 leftMargin = insets.left
                 rightMargin = insets.right
             }
@@ -103,7 +96,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
          *
          * @return A new instance of fragment SearchFragment.
          */
-        fun newInstance() = SearchFragment().apply {
+        fun newInstance() = LibraryFragment().apply {
             arguments = createBundle()
         }
     }
