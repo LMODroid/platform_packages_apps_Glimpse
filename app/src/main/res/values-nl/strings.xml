@@ -80,6 +80,10 @@
     <string name="file_action_use_as">Gebruik als</string>
     <string name="file_action_undo_action">Maak ongedaan</string>
     <string name="no_media">Geen media</string>
+    <plurals name="thumbnail_selection_count">
+        <item quantity="one">%d geselekteerd</item>
+        <item quantity="other">%d geselecteerd</item>
+    </plurals>
     <string name="pick_a_photo">Kies een foto</string>
     <string name="pick_a_video">Kies een video</string>
     <string name="pick_a_media">Kies media</string>
