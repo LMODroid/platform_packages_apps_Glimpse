@@ -16,7 +16,7 @@ android_app {
     resource_dirs: ["src/main/res"],
     manifest: "src/main/AndroidManifest.xml",
 
-    sdk_version: "34",
+    sdk_version: "35",
     product_specific: true,
 
     use_embedded_native_libs: true,
@@ -39,7 +39,7 @@ android_app {
         "androidx.appcompat_appcompat",
         "androidx-constraintlayout_constraintlayout",
         "androidx.preference_preference",
-        "Glimpse_com.google.android.material_material",
+        "com.google.android.material_material",
         "androidx.exifinterface_exifinterface",
         "Glimpse_androidx.media3_media3-exoplayer",
         "Glimpse_androidx.media3_media3-exoplayer-dash",
@@ -58,7 +58,9 @@ android_app {
     ],
 
     optimize: {
+        optimize: true,
         proguard_flags_files: ["proguard-rules.pro"],
+        shrink_resources: true,
     },
 }
 

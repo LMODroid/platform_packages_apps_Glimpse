@@ -39,6 +39,10 @@
         <item quantity="one">Tiróse\'l ficheru a la papelera</item>
         <item quantity="other">Tiráronse %d ficheros a la papelera</item>
     </plurals>
+    <plurals name="move_file_to_trash_unsuccessful">
+        <item quantity="one">Nun se pudo tirar el ficheru a la papelera</item>
+        <item quantity="other">Nun se pudieron tirar %d ficheros a la papelera</item>
+    </plurals>
     <plurals name="restore_file_from_trash_confirm_message">
         <item quantity="one">¿De xuru que quies sacar %d ficheru de la papelera?</item>
         <item quantity="other">¿De xuru que quies sacar %d ficheros de la papelera?</item>

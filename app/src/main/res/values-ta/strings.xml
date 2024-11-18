@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="move_file_to_trash_successful">
+        <item quantity="one">குப்பைக்குக் கோப்பு நகர்த்தப்பட்டது</item>
+        <item quantity="other">குப்பைக்குக் கோப்புகள் நகர்த்தப்பட்டன</item>
+    </plurals>
+    <plurals name="restore_file_from_trash_successful">
+        <item quantity="one">குப்பையிலிருந்து கோப்பு மீட்டெடுக்கப்பட்டது</item>
+        <item quantity="other">குப்பையிலிருந்து %d கோப்புகள் மீட்டெடுக்கப்பட்டன</item>
+    </plurals>
+    <string name="file_action_empty_trash">குப்பையை வெறுமையாக்குக</string>
+    <string name="file_action_move_to_trash">குப்பைக்கு நகர்த்துக</string>
+    <string name="file_action_restore_from_trash">குப்பையிலிருந்து கோப்பை மீட்டெடுக்க</string>
+    <string name="file_action_share">பகிர்க</string>
+</resources>
