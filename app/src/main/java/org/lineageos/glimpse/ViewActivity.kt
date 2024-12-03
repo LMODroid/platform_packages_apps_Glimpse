@@ -43,7 +43,15 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
 import okhttp3.Request
-import org.lineageos.glimpse.ext.*
+import org.lineageos.glimpse.ext.asArray
+import org.lineageos.glimpse.ext.buildEditIntent
+import org.lineageos.glimpse.ext.buildShareIntent
+import org.lineageos.glimpse.ext.buildUseAsIntent
+import org.lineageos.glimpse.ext.createDeleteRequest
+import org.lineageos.glimpse.ext.createFavoriteRequest
+import org.lineageos.glimpse.ext.createTrashRequest
+import org.lineageos.glimpse.ext.fade
+import org.lineageos.glimpse.ext.setBarsVisibility
 import org.lineageos.glimpse.models.Media
 import org.lineageos.glimpse.models.MediaStoreMedia
 import org.lineageos.glimpse.models.MediaType

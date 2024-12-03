@@ -8,8 +8,8 @@ import org.lineageos.generatebp.GenerateBpPluginExtension
 import org.lineageos.generatebp.models.Module
 
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
 }
 
 apply {
@@ -18,7 +18,7 @@ apply {
 
 buildscript {
     repositories {
-        maven("https://raw.githubusercontent.com/lineage-next/gradle-generatebp/v1.9/.m2")
+        maven("https://raw.githubusercontent.com/lineage-next/gradle-generatebp/v1.15/.m2")
     }
 
     dependencies {
@@ -27,8 +27,8 @@ buildscript {
 }
 
 android {
-    compileSdk = 35
     namespace = "org.lineageos.glimpse"
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "org.lineageos.glimpse"
@@ -39,34 +39,32 @@ android {
     }
 
     buildTypes {
-        getByName("release") {
+        release {
             // Enables code shrinking, obfuscation, and optimization.
             isMinifyEnabled = true
 
             // Enables resource shrinking.
             isShrinkResources = true
 
-            // Includes the default ProGuard rules files.
-            setProguardFiles(
-                listOf(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
-                )
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
-        getByName("debug") {
+
+        debug {
             // Append .dev to package name so we won't conflict with AOSP build.
             applicationIdSuffix = ".dev"
         }
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 
     lint {
@@ -75,41 +73,33 @@ android {
 }
 
 dependencies {
-    // Align versions of all Kotlin components
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.10"))
-
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.preference:preference:1.2.1")
-    implementation("com.google.android.material:material:1.9.0")
-
-    // EXIF
-    implementation("androidx.exifinterface:exifinterface:1.3.7")
-
-    // Media3
-    implementation("androidx.media3:media3-exoplayer:1.2.1")
-    implementation("androidx.media3:media3-exoplayer-dash:1.2.1")
-    implementation("androidx.media3:media3-exoplayer-hls:1.2.1")
-    implementation("androidx.media3:media3-exoplayer-rtsp:1.2.1")
-    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.2.1")
-    implementation("androidx.media3:media3-ui:1.2.1")
-
-    // Navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
-
-    // Recyclerview
-    implementation("androidx.recyclerview:recyclerview:1.3.2")
-    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
-
-    // Coil
-    implementation("io.coil-kt:coil:2.5.0")
-    implementation("io.coil-kt:coil-gif:2.5.0")
-    implementation("io.coil-kt:coil-video:2.5.0")
-
-    // ZoomImage
-    implementation("io.github.panpf.zoomimage:zoomimage-view-coil:1.0.2")
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.exifinterface)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.lifecycle.service)
+    implementation(libs.androidx.media3.common.ktx)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.exoplayer.dash)
+    implementation(libs.androidx.media3.exoplayer.hls)
+    implementation(libs.androidx.media3.exoplayer.rtsp)
+    implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+    implementation(libs.androidx.media3.ui)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.preference)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.recyclerview.selection)
+    implementation(libs.androidx.viewpager2)
+    implementation(libs.coil)
+    implementation(libs.coil.gif)
+    implementation(libs.coil.network.okhttp)
+    implementation(libs.coil.video)
+    implementation(libs.material)
+    implementation(libs.okhttp)
+    implementation(libs.zoomimage.view.coil)
 }
 
 configure<GenerateBpPluginExtension> {

@@ -19,7 +19,11 @@ import org.lineageos.glimpse.ext.queryFlow
 import org.lineageos.glimpse.models.Album
 import org.lineageos.glimpse.models.MediaStoreMedia
 import org.lineageos.glimpse.models.MediaType
-import org.lineageos.glimpse.query.*
+import org.lineageos.glimpse.query.MediaQuery
+import org.lineageos.glimpse.query.Query
+import org.lineageos.glimpse.query.and
+import org.lineageos.glimpse.query.eq
+import org.lineageos.glimpse.query.join
 import org.lineageos.glimpse.utils.MediaStoreBuckets
 import org.lineageos.glimpse.utils.PickerUtils
 
@@ -70,7 +74,7 @@ class AlbumFlow(
 
         val selectionArgs = listOfNotNull(
             bucketId.takeIf {
-                MediaStoreBuckets.values().none { bucket -> it == bucket.id }
+                MediaStoreBuckets.entries.none { bucket -> it == bucket.id }
             }?.toString(),
             rawMimeType,
         ).toTypedArray()

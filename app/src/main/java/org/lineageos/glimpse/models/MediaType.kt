@@ -37,7 +37,7 @@ enum class MediaType(
             "application/vnd.ms-sstr+xml",
         )
 
-        fun fromMediaStoreValue(value: Int) = values().first {
+        fun fromMediaStoreValue(value: Int) = entries.first {
             value == it.mediaStoreValue
         }
 

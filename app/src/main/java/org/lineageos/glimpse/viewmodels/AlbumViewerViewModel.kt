@@ -17,7 +17,7 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapNotNull
 import kotlinx.coroutines.flow.stateIn
-import org.lineageos.glimpse.ext.*
+import org.lineageos.glimpse.ext.context
 import org.lineageos.glimpse.models.Album
 import org.lineageos.glimpse.models.MediaStoreMedia
 import org.lineageos.glimpse.recyclerview.ThumbnailAdapter
@@ -50,7 +50,8 @@ class AlbumViewerViewModel(
 
                     val previousMedia = medias[i - 1]
 
-                    val before = previousMedia.dateModified.toInstant().atZone(ZoneId.systemDefault())
+                    val before =
+                        previousMedia.dateModified.toInstant().atZone(ZoneId.systemDefault())
                     val after = currentMedia.dateModified.toInstant().atZone(ZoneId.systemDefault())
                     val days = ChronoUnit.DAYS.between(after, before)
 

@@ -17,7 +17,7 @@ import androidx.core.content.ContextCompat
 import androidx.preference.PreferenceManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.lineageos.glimpse.R
-import org.lineageos.glimpse.ext.*
+import org.lineageos.glimpse.ext.manageMediaPermissionDialogDismissed
 
 /**
  * App's permissions utils.

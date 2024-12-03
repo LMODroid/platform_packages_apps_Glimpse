@@ -17,7 +17,7 @@ import androidx.media3.ui.PlayerView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
+import coil3.load
 import com.github.panpf.zoomimage.CoilZoomImageView
 import org.lineageos.glimpse.R
 import org.lineageos.glimpse.ext.fade

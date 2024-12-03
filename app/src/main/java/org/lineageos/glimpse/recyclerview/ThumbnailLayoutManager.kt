@@ -6,7 +6,7 @@
 package org.lineageos.glimpse.recyclerview
 
 import android.content.Context
-import org.lineageos.glimpse.ext.*
+import org.lineageos.glimpse.ext.px
 
 class ThumbnailLayoutManager(
     context: Context,

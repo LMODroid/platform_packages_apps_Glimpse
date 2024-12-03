@@ -13,7 +13,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
+import coil3.load
+import coil3.request.placeholder
 import org.lineageos.glimpse.R
 import org.lineageos.glimpse.models.Album
 
