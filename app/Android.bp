@@ -1,5 +1,5 @@
 //
-// SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+// SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
 
@@ -31,6 +31,10 @@ android_app {
         "preinstalled-packages-org.lineageos.glimpse",
     ],
 
+    kotlin_plugins: [
+        "kotlin-parcelize-compiler-plugin",
+    ],
+
     static_libs: [
         // DO NOT EDIT THIS SECTION MANUALLY
         "androidx.activity_activity",
@@ -55,17 +59,13 @@ android_app {
         "androidx.recyclerview_recyclerview",
         "androidx.recyclerview_recyclerview-selection",
         "androidx.viewpager2_viewpager2",
+        "Glimpse_com.github.bumptech.glide_glide",
+        "Glimpse_com.github.bumptech.glide_okhttp3-integration",
         "com.google.android.material_material",
         "Glimpse_com.squareup.okhttp3_okhttp",
-        "Glimpse_io.coil-kt.coil3_coil",
-        "Glimpse_io.coil-kt.coil3_coil-android",
-        "Glimpse_io.coil-kt.coil3_coil-core-android",
-        "Glimpse_io.coil-kt.coil3_coil-gif",
-        "Glimpse_io.coil-kt.coil3_coil-network-core-android",
-        "Glimpse_io.coil-kt.coil3_coil-network-okhttp",
-        "Glimpse_io.coil-kt.coil3_coil-video",
         "Glimpse_io.github.panpf.zoomimage_zoomimage-core-android",
-        "Glimpse_io.github.panpf.zoomimage_zoomimage-view-coil",
+        "Glimpse_io.github.panpf.zoomimage_zoomimage-view-glide",
+        "kotlin-parcelize-runtime",
         "kotlin-stdlib",
     ],
 

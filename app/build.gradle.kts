@@ -1,29 +1,16 @@
 /*
- * SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import org.lineageos.generatebp.GenerateBpPlugin
 import org.lineageos.generatebp.GenerateBpPluginExtension
 import org.lineageos.generatebp.models.Module
 
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-}
-
-apply {
-    plugin<GenerateBpPlugin>()
-}
-
-buildscript {
-    repositories {
-        maven("https://raw.githubusercontent.com/lineage-next/gradle-generatebp/v1.15/.m2")
-    }
-
-    dependencies {
-        classpath("org.lineageos:gradle-generatebp:+")
-    }
+    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.lineageos.generatebp)
 }
 
 android {
@@ -93,17 +80,16 @@ dependencies {
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.recyclerview.selection)
     implementation(libs.androidx.viewpager2)
-    implementation(libs.coil)
-    implementation(libs.coil.gif)
-    implementation(libs.coil.network.okhttp)
-    implementation(libs.coil.video)
+    implementation(libs.glide)
+    implementation(libs.glide.okhttp3.integration)
     implementation(libs.material)
     implementation(libs.okhttp)
-    implementation(libs.zoomimage.view.coil)
+    implementation(libs.zoomimage.view.glide)
 }
 
 configure<GenerateBpPluginExtension> {
     targetSdk.set(android.defaultConfig.targetSdk!!)
+    minSdk.set(android.defaultConfig.minSdk!!)
     availableInAOSP.set { module: Module ->
         when {
             module.group.startsWith("androidx") -> {

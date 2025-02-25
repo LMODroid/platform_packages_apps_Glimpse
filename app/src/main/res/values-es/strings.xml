@@ -6,13 +6,13 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Galería</string>
     <string name="app_permissions_toast">Permisos no otorgados por el usuario.</string>
-    <string name="reels_title">Carretes</string>
+    <string name="reels_title">Imágenes</string>
     <string name="albums_title">Álbumes</string>
     <string name="categories_title">Categorías</string>
     <string name="library_title">Biblioteca</string>
     <string name="album_favorites">Favoritos</string>
     <string name="album_trash">Papelera</string>
-    <string name="album_reels">Carretes</string>
+    <string name="album_reels">Imágenes</string>
     <string name="album_photos">Fotos</string>
     <string name="album_videos">Vídeos</string>
     <plurals name="album_thumbnail_items">
