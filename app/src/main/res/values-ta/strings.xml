@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">படத்தொகுப்பு</string>
-    <string name="app_permissions_toast">அனுமதிகள் பயனரால் வழங்கப்படவில்லை.</string>
+    <string name="app_permissions_toast">பயனரால் அனுமதிகள் வழங்கப்படவில்லை.</string>
     <string name="reels_title">குறும்படங்கள்</string>
     <string name="albums_title">தொகுப்புகள்</string>
     <string name="categories_title">வகைகள்</string>
@@ -62,7 +62,7 @@
     <string name="media_info_write_description_failed">ஊடக விளக்கத்தை மாற்றுவதில் தோல்வியுற்றது</string>
     <string name="media_info_location_loading_placeholder">ஏற்றுகின்றது…</string>
     <string name="media_info_location_open_with">இருப்பிடத்தைக் காண்க</string>
-    <string name="intent_action_not_supported">செய்கை ஆதரிக்கப்படவில்லை</string>
+    <string name="intent_action_not_supported">செய்கை ஒத்துழைக்கவில்லை</string>
     <string name="intent_media_not_found">ஊடகம் கிடைக்கவில்லை</string>
     <string name="intent_media_type_not_found">ஊடக வகை கிடைக்கவில்லை</string>
     <string name="intent_media_type_not_supported">ஊடக வகை ஆதரிக்கப்படவில்லை</string>
@@ -94,4 +94,5 @@
     <string name="set_wallpaper_home_screen">முகப்புத் திரை</string>
     <string name="set_wallpaper_lock_screen">பூட்டுத் திரை</string>
     <string name="set_wallpaper_both">முகப்புத் திரையும், பூட்டுத் திரையும்</string>
+    <string name="warning_bin_time_period">30 நாளுக்குப் பிறகு கோப்புகள் நிலையாக நீக்கப்படும்.</string>
 </resources>

@@ -23,7 +23,6 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import org.lineageos.glimpse.ext.updateMargin
 import org.lineageos.glimpse.models.MediaType
-import org.lineageos.glimpse.utils.MimeUtils
 import org.lineageos.glimpse.viewmodels.IntentsViewModel
 
 class PickerActivity : AppCompatActivity(R.layout.activity_picker) {

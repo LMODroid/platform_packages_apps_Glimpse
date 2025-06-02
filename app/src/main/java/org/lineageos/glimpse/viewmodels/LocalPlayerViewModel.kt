@@ -186,6 +186,7 @@ class LocalPlayerViewModel(
             when (it) {
                 is IntentsViewModel.ParsedIntent.ReviewIntent,
                 is IntentsViewModel.ParsedIntent.SecureReviewIntent -> false
+
                 else -> true
             }
         }
