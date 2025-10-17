@@ -9,6 +9,7 @@
     <string name="reels_title">Reels</string>
     <string name="albums_title">Alba</string>
     <string name="categories_title">Kategorie</string>
+    <string name="library_title">Knihovna</string>
     <string name="album_favorites">Oblíbené</string>
     <string name="album_trash">Koš</string>
     <string name="album_reels">Reels</string>
@@ -115,4 +116,5 @@
     <string name="set_wallpaper_home_screen">Domovská obrazovka</string>
     <string name="set_wallpaper_lock_screen">Zamykací obrazovka</string>
     <string name="set_wallpaper_both">Domovská a zamykací obrazovka</string>
+    <string name="warning_bin_time_period">Soubory budou trvale odstraněny po 30 dnech.</string>
 </resources>

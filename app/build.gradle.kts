@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.lineageos.generatebp.GenerateBpPluginExtension
 import org.lineageos.generatebp.models.Module
 
@@ -15,12 +16,12 @@ plugins {
 
 android {
     namespace = "org.lineageos.glimpse"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "org.lineageos.glimpse"
         minSdk = 30
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
     }
@@ -50,8 +51,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
+    kotlin {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_17)
+        }
     }
 
     lint {
@@ -99,9 +102,7 @@ configure<GenerateBpPluginExtension> {
 
             module.group.startsWith("org.jetbrains") -> true
             module.group == "com.google.android.material" -> true
-            module.group == "com.google.auto.value" -> true
             module.group == "com.google.guava" -> true
-            module.group == "junit" -> true
             else -> false
         }
     }

@@ -13,6 +13,7 @@ import android.location.Geocoder
 import android.net.Uri
 import android.os.Build
 import android.text.InputType
+import android.text.format.Formatter
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
@@ -165,8 +166,8 @@ class MediaInfoBottomSheetDialog(
 
             mediaInfoListItem.supportingText = listOf(
                 media.mimeType,
-                "${((media.width.toDouble() * media.height) / 1024000).round(1)}MP",
                 "${media.width} x ${media.height}",
+                Formatter.formatFileSize(context, media.sizeBytes),
             ).joinToString(SEPARATOR)
 
             exifInterface.latLong?.let {

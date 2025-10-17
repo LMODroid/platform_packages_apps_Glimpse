@@ -4,5 +4,116 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">גלריה</string>
+    <string name="app_permissions_toast">לא הוענקו הרשאות על ידי המשתמש.</string>
+    <string name="reels_title">מדיה</string>
+    <string name="albums_title">אלבומים</string>
+    <string name="categories_title">קטגוריות</string>
+    <string name="library_title">ספרייה</string>
+    <string name="album_favorites">מועדפים</string>
+    <string name="album_trash">אשפה</string>
+    <string name="album_reels">מדיה</string>
+    <string name="album_photos">תמונות</string>
+    <string name="album_videos">סרטונים</string>
+    <plurals name="album_thumbnail_items">
+        <item quantity="one">פריט</item>
+        <item quantity="two">%d פריטים</item>
+        <item quantity="many">%d פריטים</item>
+        <item quantity="other">%d פריטים</item>
+    </plurals>
+    <plurals name="delete_file_forever_confirm_message">
+        <item quantity="one">האם בוודאות ברצונך למחוק את הקובץ לצמיתות?</item>
+        <item quantity="two">האם בוודאות ברצונך למחוק %d קבצים לצמיתות?</item>
+        <item quantity="many">האם בוודאות ברצונך למחוק %d קבצים לצמיתות?</item>
+        <item quantity="other">האם בוודאות ברצונך למחוק %d קבצים לצמיתות?</item>
+    </plurals>
+    <plurals name="delete_file_forever_successful">
+        <item quantity="one">קובץ נמחק לצמיתות</item>
+        <item quantity="two">%d קבצים נמחקו לצמיתות</item>
+        <item quantity="many">%d קבצים נמחקו לצמיתות</item>
+        <item quantity="other">%d קבצים נמחקו לצמיתות</item>
+    </plurals>
+    <plurals name="delete_file_forever_unsuccessful">
+        <item quantity="one">לא ניתן למחוק לצמיתות את הקובץ</item>
+        <item quantity="two">לא ניתן למחוק לצמיתות %d קבצים</item>
+        <item quantity="many">לא ניתן למחוק לצמיתות %d קבצים</item>
+        <item quantity="other">לא ניתן למחוק לצמיתות %d קבצים</item>
+    </plurals>
+    <plurals name="move_file_to_trash_confirm_message">
+        <item quantity="one">האם בוודאות ברצונך להעביר קובץ אחד לאשפה?</item>
+        <item quantity="two">האם בוודאות ברצונך להעביר %d קבצים לאשפה?</item>
+        <item quantity="many">האם בוודאות ברצונך להעביר %d קבצים לאשפה?</item>
+        <item quantity="other">האם בוודאות ברצונך להעביר %d קבצים לאשפה?</item>
+    </plurals>
+    <plurals name="move_file_to_trash_successful">
+        <item quantity="one">קובץ הועבר לאשפה</item>
+        <item quantity="two">%d קבצים הועברו לאשפה</item>
+        <item quantity="many">%d קבצים הועברו לאשפה</item>
+        <item quantity="other">%d קבצים הועברו לאשפה</item>
+    </plurals>
+    <plurals name="move_file_to_trash_unsuccessful">
+        <item quantity="one">לא ניתן להעביר את הקובץ לאשפה</item>
+        <item quantity="two">לא ניתן להעביר %d קבצים לאשפה</item>
+        <item quantity="many">לא ניתן להעביר %d קבצים לאשפה</item>
+        <item quantity="other">לא ניתן להעביר %d קבצים לאשפה</item>
+    </plurals>
+    <plurals name="restore_file_from_trash_confirm_message">
+        <item quantity="one">האם בוודאות ברצונך לשחזר קובץ אחד מהאשפה?</item>
+        <item quantity="two">האם בוודאות ברצונך לשחזר %d קבצים מהאשפה?</item>
+        <item quantity="many">האם בוודאות ברצונך לשחזר %d קבצים מהאשפה?</item>
+        <item quantity="other">האם בוודאות ברצונך לשחזר %d קבצים מהאשפה?</item>
+    </plurals>
+    <plurals name="restore_file_from_trash_successful">
+        <item quantity="one">הקובץ שוחזר מהאשפה</item>
+        <item quantity="two">%d הקבצים שוחזרו מהאשפה</item>
+        <item quantity="many">%d קבצים שוחזרו מהאשפה</item>
+        <item quantity="other">%d קבצים שוחזרו מהאשפה</item>
+    </plurals>
+    <plurals name="restore_file_from_trash_unsuccessful">
+        <item quantity="one">לא ניתן לשחזר את הקובץ מהאשפה</item>
+        <item quantity="two">לא ניתן לשחזר %d קבצים מהאשפה</item>
+        <item quantity="many">לא ניתן לשחזר %d קבצים מהאשפה</item>
+        <item quantity="other">לא ניתן לשחזר %d קבצים מהאשפה</item>
+    </plurals>
+    <string name="manage_media_permission_title">ניהול הרשאות מדיה</string>
+    <string name="manage_media_permission_message">כדי לנהל טוב יותר את התמונות והסרטונים שלך, יש לאפשר ליישום לנהל את קובצי המדיה שלך</string>
+    <string name="media_info_unknown">לא ידוע</string>
+    <string name="media_info_add_description_hint">הוספת תיאור</string>
+    <string name="media_info_write_description_failed">שינוי תיאור המדיה נכשל</string>
+    <string name="media_info_location_loading_placeholder">טוען…</string>
+    <string name="media_info_location_open_with">הצגת המיקום עם</string>
+    <string name="intent_action_not_supported">הפעולה אינה נתמכת</string>
+    <string name="intent_media_not_found">המדיה לא נמצאה</string>
+    <string name="intent_media_type_not_found">סוג המדיה לא נמצא</string>
+    <string name="intent_media_type_not_supported">סוג המדיה אינו נתמך</string>
+    <string name="intent_wallpaper_cannot_be_changed">לא ניתן לשנות טפט</string>
+    <string name="file_action_add_to_favorites">הוספה למועדפים</string>
+    <string name="file_action_delete_forever">מחיקה לצמיתות</string>
+    <string name="file_action_edit">עריכה</string>
+    <string name="file_action_empty_trash">ריקון אשפה</string>
+    <string name="file_action_information">מידע</string>
+    <string name="file_action_move_to_trash">העברה לאשפה</string>
+    <string name="file_action_remove_from_favorites">הסרה מהמועדפים</string>
+    <string name="file_action_restore_from_trash">שחזור מהאשפה</string>
+    <string name="file_action_share">שיתוף</string>
+    <string name="file_action_use_as">שימוש כ</string>
+    <string name="file_action_undo_action">ביטול</string>
+    <string name="no_media">אין מדיה</string>
+    <plurals name="thumbnail_selection_count">
+        <item quantity="one">%d נבחר</item>
+        <item quantity="two">%d נבחרו</item>
+        <item quantity="many">%d נבחרו</item>
+        <item quantity="other">%d נבחרו</item>
+    </plurals>
+    <string name="pick_a_photo">בחירת תמונה</string>
+    <string name="pick_a_video">בחירת סרטון</string>
+    <string name="pick_a_media">בחירת מדיה</string>
+    <string name="picker_done">בוצע</string>
+    <string name="set_wallpaper_label">טפט</string>
+    <string name="set_wallpaper">הגדרת טפט</string>
+    <string name="set_wallpaper_dialog_title">הגדרה כטפט</string>
+    <string name="set_wallpaper_home_screen">מסך הבית</string>
+    <string name="set_wallpaper_lock_screen">מסך נעילה</string>
+    <string name="set_wallpaper_both">מסך בית ומסך נעילה</string>
     <string name="warning_bin_time_period">הקבצים יימחקו לצמיתות לאחר 30 יום.</string>
 </resources>
