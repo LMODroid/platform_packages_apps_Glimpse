@@ -9,7 +9,7 @@
     <string name="reels_title">Fotos</string>
     <string name="albums_title">Álbuns</string>
     <string name="categories_title">Categorias</string>
-    <string name="library_title">Biblioteca</string>
+    <string name="library_title">Fototeca</string>
     <string name="album_favorites">Favoritos</string>
     <string name="album_trash">Lixeira</string>
     <string name="album_reels">Fotos</string>
@@ -89,8 +89,8 @@
     <string name="pick_a_media">Escolha uma mídia</string>
     <string name="picker_done">Pronto</string>
     <string name="set_wallpaper_label">Plano de fundo</string>
-    <string name="set_wallpaper">Definir plano de fundo</string>
-    <string name="set_wallpaper_dialog_title">Definir plano de fundo na</string>
+    <string name="set_wallpaper">Configurar plano de fundo</string>
+    <string name="set_wallpaper_dialog_title">Configurar plano de fundo na</string>
     <string name="set_wallpaper_home_screen">Tela inicial</string>
     <string name="set_wallpaper_lock_screen">Tela de bloqueio</string>
     <string name="set_wallpaper_both">Tela inicial e de bloqueio</string>

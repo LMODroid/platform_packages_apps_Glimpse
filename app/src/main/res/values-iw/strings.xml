@@ -86,6 +86,7 @@
     <string name="intent_media_not_found">המדיה לא נמצאה</string>
     <string name="intent_media_type_not_found">סוג המדיה לא נמצא</string>
     <string name="intent_media_type_not_supported">סוג המדיה אינו נתמך</string>
+    <string name="intent_no_system_wallpaper_cropper_available">אין כלי חיתוך זמין במערכת</string>
     <string name="intent_wallpaper_cannot_be_changed">לא ניתן לשנות טפט</string>
     <string name="file_action_add_to_favorites">הוספה למועדפים</string>
     <string name="file_action_delete_forever">מחיקה לצמיתות</string>

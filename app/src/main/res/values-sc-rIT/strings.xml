@@ -9,6 +9,7 @@
     <string name="reels_title">Reels</string>
     <string name="albums_title">Albums</string>
     <string name="categories_title">Categorias</string>
+    <string name="library_title">Biblioteca</string>
     <string name="album_favorites">Preferidos</string>
     <string name="album_trash">Àliga</string>
     <string name="album_reels">Reels</string>
@@ -93,4 +94,5 @@
     <string name="set_wallpaper_home_screen">Ischermu printzipale</string>
     <string name="set_wallpaper_lock_screen">Ischermu de blocu</string>
     <string name="set_wallpaper_both">Ischermu preintzipale e de blocu</string>
+    <string name="warning_bin_time_period">Is archìvios ant a èssere cantzellados in manera permanente a pustis de 30 dies.</string>
 </resources>
