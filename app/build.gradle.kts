@@ -1,16 +1,10 @@
 /*
- * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.lineageos.generatebp.GenerateBpPluginExtension
-import org.lineageos.generatebp.models.Module
-
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.lineageos.generatebp)
 }
 
@@ -51,18 +45,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlin {
-        compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_17)
-        }
-    }
-
     lint {
         lintConfig = file("lint.xml")
     }
 }
 
 dependencies {
+    implementation(libs.adobe.xmpcore)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
@@ -90,19 +79,20 @@ dependencies {
     implementation(libs.zoomimage.view.glide)
 }
 
-configure<GenerateBpPluginExtension> {
-    targetSdk.set(android.defaultConfig.targetSdk!!)
-    minSdk.set(android.defaultConfig.minSdk!!)
-    availableInAOSP.set { module: Module ->
+generateBp {
+    targetSdk = android.defaultConfig.targetSdk!!
+    minSdk = android.defaultConfig.minSdk!!
+    versionCode = android.defaultConfig.versionCode!!
+    versionName = android.defaultConfig.versionName!!
+    availableInAOSP = { module ->
         when {
             module.group.startsWith("androidx") -> {
-                // We provide our own androidx.media3 and androidx.navigation
-                !module.group.startsWith("androidx.media3") &&
-                !module.group.startsWith("androidx.navigation")
+                // We provide our own androidx.media3
+                !module.group.startsWith("androidx.media3")
             }
 
             module.group.startsWith("org.jetbrains") -> true
-            module.group == "com.google.android.material" -> true
+            module.group == "com.google.errorprone" -> true
             module.group == "com.google.guava" -> true
             else -> false
         }

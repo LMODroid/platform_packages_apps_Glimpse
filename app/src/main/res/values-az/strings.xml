@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Qalereya</string>
-    <string name="app_permissions_toast">İstifadəçi tərəfindən verilməyən icazələr.</string>
+    <string name="app_permissions_toast">İstifadəçi izinləri vermədi.</string>
     <string name="reels_title">Reels</string>
     <string name="albums_title">Albomlar</string>
     <string name="categories_title">Kateqoriyalar</string>
@@ -55,7 +55,7 @@
         <item quantity="one">Fayl tullantı qutusundan bərpa edilə bilmədi</item>
         <item quantity="other">%d fayl tullantı qutusundan bərpa edilə bilmədi</item>
     </plurals>
-    <string name="manage_media_permission_title">Media icazələrini idarə et</string>
+    <string name="manage_media_permission_title">Media izinlərini darə et</string>
     <string name="manage_media_permission_message">Şəkillərini və videolarınızı daha yaxşı idarə etmək üçün tətbiqin media fayllarınızı idarə etməsinə icazə verin</string>
     <string name="media_info_unknown">Bilinmir</string>
     <string name="media_info_add_description_hint">Bir açıqlama əlavə et</string>
@@ -74,7 +74,7 @@
     <string name="file_action_empty_trash">Tullantı qutusunu boşalt</string>
     <string name="file_action_information">Məlumat</string>
     <string name="file_action_move_to_trash">Tullantı qutusuna daşı</string>
-    <string name="file_action_remove_from_favorites">Sevimlilərdən sil</string>
+    <string name="file_action_remove_from_favorites">Sevimlilərdən çıxart</string>
     <string name="file_action_restore_from_trash">Tullantı qutusundan bərpa et</string>
     <string name="file_action_share">Paylaş</string>
     <string name="file_action_use_as">İstifadə et</string>
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">Kilid ekranı</string>
     <string name="set_wallpaper_both">Əsas ekran və Kilid ekranı</string>
     <string name="warning_bin_time_period">Fayllar, 30 gün sonra həmişəlik silinəcək.</string>
+    <string name="motion_photo_show_video">Videonu göstər</string>
+    <string name="motion_photo_show_photo">Fotonu göstər</string>
+    <string name="title_activity_settings">Ayarlar</string>
+    <string name="general_header">Ümumi</string>
+    <string name="video_header">Video</string>
+    <string name="edge_tap_navigation_enable_title">Kənar naviqasiya</string>
+    <string name="edge_tap_navigation_enabled_description">Media faylları arasında gəzinmək üçün ekranın sol və ya sağ kənarına toxunun</string>
+    <string name="double_tap_to_seek_enabled_title">Cüt toxunaraq irəli/geri çəkməni fəallaşdır</string>
+    <string name="double_tap_to_seek_enabled_description">Videonun sol/sağ hissələrinə cüt toxunaraq geri/irəli ötürə bilərsiniz</string>
+    <string name="double_tap_to_seek_seconds_title">Cüt toxunaraq irəli/geri çəkmə müddəti</string>
+    <string name="double_tap_to_seek_seconds_description">Videoya cüt toxunduğunuz zaman ötürüləcək saniyə</string>
+    <string name="hide_native_seek_buttons_title">Daxili çəkmə düymələrini gizlət</string>
+    <string name="hide_native_seek_buttons_description">Video pleyer kontrollarından geri/irəli çəkmə düymələrini gizlət</string>
+    <string name="remember_video_playback_position_enabled_title">Oxutma mövqeyini xatırla</string>
+    <string name="remember_video_playback_position_enabled_description">Videoları son dayandığı yerdən davam etdir</string>
 </resources>

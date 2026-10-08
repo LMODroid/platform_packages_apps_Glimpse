@@ -1,23 +1,31 @@
 /*
- * SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
 package org.lineageos.glimpse.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.navigation.NavigationBarView
 import org.lineageos.glimpse.R
+import org.lineageos.glimpse.SettingsActivity
 import org.lineageos.glimpse.ext.getViewProperty
 import org.lineageos.glimpse.models.AlbumType
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     // Views
     private val navigationBarView by getViewProperty<NavigationBarView>(R.id.navigationBarView)
+    private val settingsMaterialButton by getViewProperty<MaterialButton>(R.id.settingsMaterialButton)
+    private val toolbar by getViewProperty<MaterialToolbar>(R.id.toolbar)
     private val viewPager2 by getViewProperty<ViewPager2>(R.id.viewPager2)
 
     private val onPageChangeCallback by lazy {
@@ -32,6 +40,14 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // Toolbar
+        toolbar.setupWithNavController(findNavController())
+
+        settingsMaterialButton.setOnClickListener {
+            val intent = Intent(context, SettingsActivity::class.java)
+            startActivity(intent)
+        }
 
         // ViewPager2
         viewPager2.isUserInputEnabled = false
@@ -75,7 +91,14 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     companion object {
         // Keep in sync with the NavigationBarView menu
         private val fragments = arrayOf(
-            { AlbumFragment().apply { arguments = AlbumFragment.createBundle(AlbumType.REELS) } },
+            {
+                AlbumFragment().apply {
+                    arguments = AlbumFragment.createBundle(
+                        albumType = AlbumType.REELS,
+                        hideToolbar = true,
+                    )
+                }
+            },
             { AlbumsFragment() },
             { LibraryFragment() },
         )

@@ -7,7 +7,7 @@
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-common",
-    aars: ["androidx/media3/media3-common/1.5.0/media3-common-1.5.0.aar"],
+    aars: ["androidx/media3/media3-common/1.10.0/media3-common-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -23,7 +23,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-common-ktx",
-    aars: ["androidx/media3/media3-common-ktx/1.5.0/media3-common-ktx-1.5.0.aar"],
+    aars: ["androidx/media3/media3-common-ktx/1.10.0/media3-common-ktx-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -33,7 +33,7 @@ android_library_import {
     static_libs: [
         "androidx.core_core",
         "Glimpse_androidx.media3_media3-common",
-        "Glimpse_androidx.media3_media3-exoplayer",
+        "kotlin-stdlib",
         "kotlinx-coroutines-android",
         "kotlinx-coroutines-core",
     ],
@@ -41,7 +41,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-container",
-    aars: ["androidx/media3/media3-container/1.5.0/media3-container-1.5.0.aar"],
+    aars: ["androidx/media3/media3-container/1.10.0/media3-container-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -56,7 +56,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-database",
-    aars: ["androidx/media3/media3-database/1.5.0/media3-database-1.5.0.aar"],
+    aars: ["androidx/media3/media3-database/1.10.0/media3-database-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -71,7 +71,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-datasource",
-    aars: ["androidx/media3/media3-datasource/1.5.0/media3-datasource-1.5.0.aar"],
+    aars: ["androidx/media3/media3-datasource/1.10.0/media3-datasource-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -88,7 +88,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-decoder",
-    aars: ["androidx/media3/media3-decoder/1.5.0/media3-decoder-1.5.0.aar"],
+    aars: ["androidx/media3/media3-decoder/1.10.0/media3-decoder-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -103,7 +103,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-exoplayer",
-    aars: ["androidx/media3/media3-exoplayer/1.5.0/media3-exoplayer-1.5.0.aar"],
+    aars: ["androidx/media3/media3-exoplayer/1.10.0/media3-exoplayer-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -112,8 +112,6 @@ android_library_import {
     ],
     static_libs: [
         "androidx.annotation_annotation",
-        "androidx.collection_collection",
-        "androidx.core_core",
         "androidx.exifinterface_exifinterface",
         "Glimpse_androidx.media3_media3-common",
         "Glimpse_androidx.media3_media3-container",
@@ -121,12 +119,13 @@ android_library_import {
         "Glimpse_androidx.media3_media3-datasource",
         "Glimpse_androidx.media3_media3-decoder",
         "Glimpse_androidx.media3_media3-extractor",
+        "kotlin-stdlib",
     ],
 }
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-exoplayer-dash",
-    aars: ["androidx/media3/media3-exoplayer-dash/1.5.0/media3-exoplayer-dash-1.5.0.aar"],
+    aars: ["androidx/media3/media3-exoplayer-dash/1.10.0/media3-exoplayer-dash-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -141,7 +140,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-exoplayer-hls",
-    aars: ["androidx/media3/media3-exoplayer-hls/1.5.0/media3-exoplayer-hls-1.5.0.aar"],
+    aars: ["androidx/media3/media3-exoplayer-hls/1.10.0/media3-exoplayer-hls-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -156,7 +155,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-exoplayer-rtsp",
-    aars: ["androidx/media3/media3-exoplayer-rtsp/1.5.0/media3-exoplayer-rtsp-1.5.0.aar"],
+    aars: ["androidx/media3/media3-exoplayer-rtsp/1.10.0/media3-exoplayer-rtsp-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -171,7 +170,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-exoplayer-smoothstreaming",
-    aars: ["androidx/media3/media3-exoplayer-smoothstreaming/1.5.0/media3-exoplayer-smoothstreaming-1.5.0.aar"],
+    aars: ["androidx/media3/media3-exoplayer-smoothstreaming/1.10.0/media3-exoplayer-smoothstreaming-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -186,7 +185,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-extractor",
-    aars: ["androidx/media3/media3-extractor/1.5.0/media3-extractor-1.5.0.aar"],
+    aars: ["androidx/media3/media3-extractor/1.10.0/media3-extractor-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -203,7 +202,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_androidx.media3_media3-ui",
-    aars: ["androidx/media3/media3-ui/1.5.0/media3-ui-1.5.0.aar"],
+    aars: ["androidx/media3/media3-ui/1.10.0/media3-ui-1.10.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -212,167 +211,14 @@ android_library_import {
     ],
     static_libs: [
         "androidx.annotation_annotation",
-        "androidx.media_media",
         "Glimpse_androidx.media3_media3-common",
         "androidx.recyclerview_recyclerview",
     ],
 }
 
-java_library_static {
-    name: "Glimpse_androidx.navigation_navigation-common",
-    sdk_version: "36",
-    min_sdk_version: "30",
-    apex_available: [
-        "//apex_available:platform",
-        "//apex_available:anyapex",
-    ],
-    static_libs: [
-        "Glimpse_androidx.navigation_navigation-common-android",
-    ],
-}
-
-android_library_import {
-    name: "Glimpse_androidx.navigation_navigation-common-android",
-    aars: ["androidx/navigation/navigation-common-android/2.9.5/navigation-common-release.aar"],
-    sdk_version: "36",
-    min_sdk_version: "30",
-    apex_available: [
-        "//apex_available:platform",
-        "//apex_available:anyapex",
-    ],
-    static_libs: [
-        "androidx.annotation_annotation",
-        "androidx.collection_collection",
-        "androidx.core_core-ktx",
-        "androidx.lifecycle_lifecycle-common",
-        "androidx.lifecycle_lifecycle-runtime",
-        "androidx.lifecycle_lifecycle-viewmodel",
-        "androidx.lifecycle_lifecycle-viewmodel-savedstate",
-        "androidx.profileinstaller_profileinstaller",
-        "androidx.savedstate_savedstate",
-        "kotlin-stdlib",
-        "kotlinx_serialization_core",
-    ],
-}
-
-android_library_import {
-    name: "Glimpse_androidx.navigation_navigation-fragment",
-    aars: ["androidx/navigation/navigation-fragment/2.9.5/navigation-fragment-2.9.5.aar"],
-    sdk_version: "36",
-    min_sdk_version: "30",
-    apex_available: [
-        "//apex_available:platform",
-        "//apex_available:anyapex",
-    ],
-    static_libs: [
-        "androidx.activity_activity",
-        "androidx.core_core-ktx",
-        "androidx.fragment_fragment-ktx",
-        "androidx.lifecycle_lifecycle-common",
-        "androidx.lifecycle_lifecycle-livedata-core",
-        "androidx.lifecycle_lifecycle-viewmodel",
-        "Glimpse_androidx.navigation_navigation-common",
-        "Glimpse_androidx.navigation_navigation-runtime",
-        "androidx.savedstate_savedstate",
-        "androidx.slidingpanelayout_slidingpanelayout",
-        "kotlin-stdlib",
-        "kotlinx-coroutines-core",
-        "kotlinx_serialization_core",
-    ],
-}
-
-android_library_import {
-    name: "Glimpse_androidx.navigation_navigation-fragment-ktx",
-    aars: ["androidx/navigation/navigation-fragment-ktx/2.9.5/navigation-fragment-ktx-2.9.5.aar"],
-    sdk_version: "36",
-    min_sdk_version: "30",
-    apex_available: [
-        "//apex_available:platform",
-        "//apex_available:anyapex",
-    ],
-    static_libs: [
-        "Glimpse_androidx.navigation_navigation-fragment",
-    ],
-}
-
-java_library_static {
-    name: "Glimpse_androidx.navigation_navigation-runtime",
-    sdk_version: "36",
-    min_sdk_version: "30",
-    apex_available: [
-        "//apex_available:platform",
-        "//apex_available:anyapex",
-    ],
-    static_libs: [
-        "Glimpse_androidx.navigation_navigation-runtime-android",
-    ],
-}
-
-android_library_import {
-    name: "Glimpse_androidx.navigation_navigation-runtime-android",
-    aars: ["androidx/navigation/navigation-runtime-android/2.9.5/navigation-runtime-release.aar"],
-    sdk_version: "36",
-    min_sdk_version: "30",
-    apex_available: [
-        "//apex_available:platform",
-        "//apex_available:anyapex",
-    ],
-    static_libs: [
-        "androidx.activity_activity-ktx",
-        "androidx.annotation_annotation-experimental",
-        "androidx.collection_collection",
-        "androidx.core_core-ktx",
-        "androidx.lifecycle_lifecycle-common",
-        "androidx.lifecycle_lifecycle-runtime",
-        "androidx.lifecycle_lifecycle-runtime-ktx",
-        "androidx.lifecycle_lifecycle-viewmodel",
-        "androidx.lifecycle_lifecycle-viewmodel-ktx",
-        "Glimpse_androidx.navigation_navigation-common",
-        "kotlin-stdlib",
-        "kotlinx-coroutines-core",
-        "kotlinx_serialization_core",
-    ],
-}
-
-android_library_import {
-    name: "Glimpse_androidx.navigation_navigation-ui",
-    aars: ["androidx/navigation/navigation-ui/2.9.5/navigation-ui-2.9.5.aar"],
-    sdk_version: "36",
-    min_sdk_version: "30",
-    apex_available: [
-        "//apex_available:platform",
-        "//apex_available:anyapex",
-    ],
-    static_libs: [
-        "androidx.appcompat_appcompat",
-        "androidx.coordinatorlayout_coordinatorlayout",
-        "androidx.core_core-ktx",
-        "androidx.customview_customview",
-        "androidx.drawerlayout_drawerlayout",
-        "Glimpse_androidx.navigation_navigation-common",
-        "Glimpse_androidx.navigation_navigation-runtime",
-        "androidx.transition_transition",
-        "com.google.android.material_material",
-    ],
-}
-
-android_library_import {
-    name: "Glimpse_androidx.navigation_navigation-ui-ktx",
-    aars: ["androidx/navigation/navigation-ui-ktx/2.9.5/navigation-ui-ktx-2.9.5.aar"],
-    sdk_version: "36",
-    min_sdk_version: "30",
-    apex_available: [
-        "//apex_available:platform",
-        "//apex_available:anyapex",
-    ],
-    static_libs: [
-        "Glimpse_androidx.navigation_navigation-ui",
-    ],
-}
-
 java_import {
-    name: "Glimpse_com.github.bumptech.glide_annotations",
-    jars: ["com/github/bumptech/glide/annotations/4.15.1/annotations-4.15.1.jar"],
+    name: "Glimpse_com.adobe.xmp_xmpcore",
+    jars: ["com/adobe/xmp/xmpcore/6.1.11/xmpcore-6.1.11.jar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -384,8 +230,21 @@ java_import {
 }
 
 java_import {
+    name: "Glimpse_com.github.bumptech.glide_annotations",
+    jars: ["com/github/bumptech/glide/annotations/5.0.5/annotations-5.0.5.jar"],
+    sdk_version: "36",
+    min_sdk_version: "30",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+    ],
+}
+
+android_library_import {
     name: "Glimpse_com.github.bumptech.glide_disklrucache",
-    jars: ["com/github/bumptech/glide/disklrucache/4.15.1/disklrucache-4.15.1.jar"],
+    aars: ["com/github/bumptech/glide/disklrucache/5.0.5/disklrucache-5.0.5.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -398,7 +257,7 @@ java_import {
 
 android_library_import {
     name: "Glimpse_com.github.bumptech.glide_gifdecoder",
-    aars: ["com/github/bumptech/glide/gifdecoder/4.15.1/gifdecoder-4.15.1.aar"],
+    aars: ["com/github/bumptech/glide/gifdecoder/5.0.5/gifdecoder-5.0.5.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -412,7 +271,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_com.github.bumptech.glide_glide",
-    aars: ["com/github/bumptech/glide/glide/4.15.1/glide-4.15.1.aar"],
+    aars: ["com/github/bumptech/glide/glide/5.0.5/glide-5.0.5.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -432,7 +291,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_com.github.bumptech.glide_okhttp3-integration",
-    aars: ["com/github/bumptech/glide/okhttp3-integration/4.14.2/okhttp3-integration-4.14.2.aar"],
+    aars: ["com/github/bumptech/glide/okhttp3-integration/5.0.5/okhttp3-integration-5.0.5.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -446,9 +305,9 @@ android_library_import {
     ],
 }
 
-java_import {
-    name: "Glimpse_com.squareup.okhttp3_okhttp",
-    jars: ["com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0.jar"],
+android_library_import {
+    name: "Glimpse_com.google.android.material_material",
+    aars: ["com/google/android/material/material/1.14.0-alpha10/material-1.14.0-alpha10.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -456,8 +315,56 @@ java_import {
         "//apex_available:anyapex",
     ],
     static_libs: [
+        "androidx.activity_activity",
+        "androidx.annotation_annotation",
+        "androidx.annotation_annotation-experimental",
+        "androidx.appcompat_appcompat",
+        "androidx.cardview_cardview",
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.coordinatorlayout_coordinatorlayout",
+        "androidx.core_core",
+        "androidx.customview_customview",
+        "androidx.drawerlayout_drawerlayout",
+        "androidx.dynamicanimation_dynamicanimation",
+        "androidx.fragment_fragment",
+        "androidx.graphics_graphics-shapes",
+        "androidx.lifecycle_lifecycle-runtime",
+        "androidx.recyclerview_recyclerview",
+        "androidx.resourceinspection_resourceinspection-annotation",
+        "androidx.transition_transition",
+        "androidx.vectordrawable_vectordrawable",
+        "androidx.viewpager2_viewpager2",
+        "error_prone_annotations",
+    ],
+}
+
+java_library_static {
+    name: "Glimpse_com.squareup.okhttp3_okhttp",
+    sdk_version: "36",
+    min_sdk_version: "30",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "Glimpse_com.squareup.okhttp3_okhttp-android",
+    ],
+}
+
+android_library_import {
+    name: "Glimpse_com.squareup.okhttp3_okhttp-android",
+    aars: ["com/squareup/okhttp3/okhttp-android/5.3.2/okhttp-release.aar"],
+    sdk_version: "36",
+    min_sdk_version: "30",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "androidx.annotation_annotation",
+        "androidx.startup_startup-runtime",
         "Glimpse_com.squareup.okio_okio",
-        "kotlin-stdlib-jdk8",
+        "kotlin-stdlib",
     ],
 }
 
@@ -476,7 +383,7 @@ java_library_static {
 
 java_import {
     name: "Glimpse_com.squareup.okio_okio-jvm",
-    jars: ["com/squareup/okio/okio-jvm/3.6.0/okio-jvm-3.6.0.jar"],
+    jars: ["com/squareup/okio/okio-jvm/3.16.4/okio-jvm-3.16.4.jar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -485,7 +392,6 @@ java_import {
     ],
     static_libs: [
         "kotlin-stdlib",
-        "kotlin-stdlib-jdk8",
     ],
 }
 
@@ -504,7 +410,7 @@ java_library_static {
 
 android_library_import {
     name: "Glimpse_io.github.panpf.zoomimage_zoomimage-core-android",
-    aars: ["io/github/panpf/zoomimage/zoomimage-core-android/1.0.2/zoomimage-core-release.aar"],
+    aars: ["io/github/panpf/zoomimage/zoomimage-core-android/1.4.0/zoomimage-core-release.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -512,11 +418,10 @@ android_library_import {
         "//apex_available:anyapex",
     ],
     static_libs: [
-        "androidx.annotation_annotation",
         "androidx.exifinterface_exifinterface",
+        "Glimpse_com.squareup.okio_okio",
         "androidx.lifecycle_lifecycle-common",
         "kotlin-stdlib",
-        "kotlin-stdlib-jdk8",
         "kotlinx-coroutines-android",
         "kotlinx-coroutines-core",
     ],
@@ -524,7 +429,7 @@ android_library_import {
 
 android_library_import {
     name: "Glimpse_io.github.panpf.zoomimage_zoomimage-core-glide",
-    aars: ["io/github/panpf/zoomimage/zoomimage-core-glide/1.0.2/zoomimage-core-glide-1.0.2.aar"],
+    aars: ["io/github/panpf/zoomimage/zoomimage-core-glide/1.4.0/zoomimage-core-glide-1.4.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -534,13 +439,13 @@ android_library_import {
     static_libs: [
         "Glimpse_com.github.bumptech.glide_glide",
         "Glimpse_io.github.panpf.zoomimage_zoomimage-core",
-        "kotlin-stdlib-jdk8",
+        "kotlin-stdlib",
     ],
 }
 
 android_library_import {
     name: "Glimpse_io.github.panpf.zoomimage_zoomimage-view",
-    aars: ["io/github/panpf/zoomimage/zoomimage-view/1.0.2/zoomimage-view-1.0.2.aar"],
+    aars: ["io/github/panpf/zoomimage/zoomimage-view/1.4.0/zoomimage-view-1.4.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -549,16 +454,15 @@ android_library_import {
     ],
     static_libs: [
         "androidx.appcompat_appcompat",
-        "androidx.core_core-ktx",
-        "androidx.lifecycle_lifecycle-runtime-ktx",
+        "androidx.lifecycle_lifecycle-runtime",
         "Glimpse_io.github.panpf.zoomimage_zoomimage-core",
-        "kotlin-stdlib-jdk8",
+        "kotlin-stdlib",
     ],
 }
 
 android_library_import {
     name: "Glimpse_io.github.panpf.zoomimage_zoomimage-view-glide",
-    aars: ["io/github/panpf/zoomimage/zoomimage-view-glide/1.0.2/zoomimage-view-glide-1.0.2.aar"],
+    aars: ["io/github/panpf/zoomimage/zoomimage-view-glide/1.4.0/zoomimage-view-glide-1.4.0.aar"],
     sdk_version: "36",
     min_sdk_version: "30",
     apex_available: [
@@ -568,6 +472,6 @@ android_library_import {
     static_libs: [
         "Glimpse_io.github.panpf.zoomimage_zoomimage-core-glide",
         "Glimpse_io.github.panpf.zoomimage_zoomimage-view",
-        "kotlin-stdlib-jdk8",
+        "kotlin-stdlib",
     ],
 }

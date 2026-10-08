@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -117,4 +117,19 @@
     <string name="set_wallpaper_lock_screen">Ekranie blokady</string>
     <string name="set_wallpaper_both">Ekranie głównym oraz blokady</string>
     <string name="warning_bin_time_period">Pliki zostaną trwale usunięte po 30 dniach.</string>
+    <string name="motion_photo_show_video">Pokaż wideo</string>
+    <string name="motion_photo_show_photo">Pokaż zdjęcie</string>
+    <string name="title_activity_settings">Ustawienia</string>
+    <string name="general_header">Ogólne</string>
+    <string name="video_header">Wideo</string>
+    <string name="edge_tap_navigation_enable_title">Nawigacja za pomocą dotknięcia krawędzi</string>
+    <string name="edge_tap_navigation_enabled_description">Dotknij lewej lub prawej krawędzi ekranu, aby nawigować pomiędzy multimediami</string>
+    <string name="double_tap_to_seek_enabled_title">Włącz podwójne dotknięcie aby wyszukać</string>
+    <string name="double_tap_to_seek_enabled_description">Dotknij dwukrotnie po lewej lub prawej stronie wideo, aby przewijać do tyłu lub do przodu</string>
+    <string name="double_tap_to_seek_seconds_title">Dwukrotne dotknięcie pozwala ustawić czas przewijania</string>
+    <string name="double_tap_to_seek_seconds_description">Liczba sekund, które zostaną pominięte po dwukrotnym dotknięciu wideo</string>
+    <string name="hide_native_seek_buttons_title">Ukrywaj natywne przyciski wyszukiwania</string>
+    <string name="hide_native_seek_buttons_description">Ukrywaj przyciski przewijania do tyłu i do przodu w panelu sterowania odtwarzacza wideo</string>
+    <string name="remember_video_playback_position_enabled_title">Zapamiętuj pozycję odtwarzania</string>
+    <string name="remember_video_playback_position_enabled_description">Wznawiaj wideo z ostatniej zatrzymanej pozycji</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -106,4 +106,19 @@
     <string name="set_wallpaper_lock_screen">Ecranul de blocare</string>
     <string name="set_wallpaper_both">Ecranele Acasă și de blocare</string>
     <string name="warning_bin_time_period">Fișierele vor fi șterse permanent după 30 de zile.</string>
+    <string name="motion_photo_show_video">Arată videoclipul</string>
+    <string name="motion_photo_show_photo">Arată poza</string>
+    <string name="title_activity_settings">Setări</string>
+    <string name="general_header">General</string>
+    <string name="video_header">Video</string>
+    <string name="edge_tap_navigation_enable_title">Navigare cu apăsare pe margine</string>
+    <string name="edge_tap_navigation_enabled_description">Atingeți marginea stângă sau dreaptă a ecranului pentru a naviga între media</string>
+    <string name="double_tap_to_seek_enabled_title">Activează dublă atingere pentru a căuta</string>
+    <string name="double_tap_to_seek_enabled_description">Atingeți de două ori partea stângă sau dreaptă a videoclipului pentru a sări înapoi sau înainte</string>
+    <string name="double_tap_to_seek_seconds_title">Durată salt atingere dublă la căutare </string>
+    <string name="double_tap_to_seek_seconds_description">Secunde pentru a sări când atingeți de două ori videoclipul</string>
+    <string name="hide_native_seek_buttons_title">Ascunde butoanele de căutare nativă</string>
+    <string name="hide_native_seek_buttons_description">Ascundeți butoanele de derulare rapidă și repetare în controalele player-ului video</string>
+    <string name="remember_video_playback_position_enabled_title">Memorează poziția de redare</string>
+    <string name="remember_video_playback_position_enabled_description">Reluați videoclipurile din ultima poziție oprită</string>
 </resources>

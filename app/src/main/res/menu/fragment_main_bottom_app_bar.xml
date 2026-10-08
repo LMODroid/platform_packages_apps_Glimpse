@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        style="@style/Theme.Glimpse.BottomAppBarOption"
         android:id="@+id/reelsFragment"
+        style="@style/Theme.Glimpse.BottomAppBarOption"
         android:icon="@drawable/ic_photo_size_select_actual"
         android:title="@string/reels_title" />
 
     <item
-        style="@style/Theme.Glimpse.BottomAppBarOption"
         android:id="@+id/albumsFragment"
+        style="@style/Theme.Glimpse.BottomAppBarOption"
         android:icon="@drawable/ic_albums"
         android:title="@string/albums_title" />
 
     <item
-        style="@style/Theme.Glimpse.BottomAppBarOption"
         android:id="@+id/libraryFragment"
+        style="@style/Theme.Glimpse.BottomAppBarOption"
         android:icon="@drawable/ic_library"
         android:title="@string/library_title" />
 

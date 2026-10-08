@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">Låseskjerm</string>
     <string name="set_wallpaper_both">Start- og låseskjerm</string>
     <string name="warning_bin_time_period">Filer vert sletta for godt etter 30 dagar.</string>
+    <string name="motion_photo_show_video">Vis video</string>
+    <string name="motion_photo_show_photo">Vis bilete</string>
+    <string name="title_activity_settings">Innstillingar</string>
+    <string name="general_header">Generelt</string>
+    <string name="video_header">Video</string>
+    <string name="edge_tap_navigation_enable_title">Kanttrykknavigering</string>
+    <string name="edge_tap_navigation_enabled_description">Trykk på venstre eller høgre kant for å navigera mellom medium</string>
+    <string name="double_tap_to_seek_enabled_title">Aktiver dobbelttrykk for å søkja</string>
+    <string name="double_tap_to_seek_enabled_description">Dobbelttrykk på venstre eller høgre sida av filmen for å hoppa bakover eller framover</string>
+    <string name="double_tap_to_seek_seconds_title">Dobbelttrykk for å spola stegvis</string>
+    <string name="double_tap_to_seek_seconds_description">Kor mange sekund å spola når du dobbelttrykkjer filmen</string>
+    <string name="hide_native_seek_buttons_title">Gøym innebygde spoleknappar</string>
+    <string name="hide_native_seek_buttons_description">Gøym knappar for spoling fram og tilbake frå videospelaren</string>
+    <string name="remember_video_playback_position_enabled_title">Hugs avspelingsposisjon</string>
+    <string name="remember_video_playback_position_enabled_description">Spel av videoar vidare frå der dei sist vart stoppa</string>
 </resources>

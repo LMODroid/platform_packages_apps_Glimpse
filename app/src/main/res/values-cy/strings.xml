@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Oriel</string>
+    <string name="app_permissions_toast">Ni roddwyd caniatâd gan y defnyddiwr.</string>
+    <string name="reels_title">Riliau</string>
+    <string name="albums_title">Casgliadau</string>
+    <string name="categories_title">Categorïau</string>
     <string name="library_title">Llyfrgell</string>
+    <string name="album_favorites">Ffefrynnau</string>
+    <string name="album_trash">Sbwriel</string>
+    <string name="album_reels">Riliau</string>
+    <string name="album_photos">Lluniau</string>
+    <string name="album_videos">Fideos</string>
+    <string name="media_info_add_description_hint">Ychwanegu disgrifiad</string>
+    <string name="file_action_add_to_favorites">Ychwanegu i ffefrynnau</string>
+    <string name="file_action_delete_forever">Dileu am byth</string>
+    <string name="picker_done">Iawn</string>
+    <string name="motion_photo_show_video">Dangos fideo</string>
+    <string name="motion_photo_show_photo">Dangos llun</string>
 </resources>

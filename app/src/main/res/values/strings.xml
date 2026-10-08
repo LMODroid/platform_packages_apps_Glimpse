@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -129,4 +129,29 @@
 
     <!-- Warnings and information -->
     <string name="warning_bin_time_period">Files will be permanently deleted after 30 days.</string>
+
+    <!-- Motion Photo -->
+    <string name="motion_photo_show_video">Show video</string>
+    <string name="motion_photo_show_photo">Show photo</string>
+
+    <!-- Settings title -->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference titles -->
+    <string name="general_header">General</string>
+    <string name="video_header">Video</string>
+
+    <!-- General preferences -->
+    <string name="edge_tap_navigation_enable_title">Edge tap navigation</string>
+    <string name="edge_tap_navigation_enabled_description">Tap left or right edge of screen to navigate between media</string>
+
+    <!-- Video preferences -->
+    <string name="double_tap_to_seek_enabled_title">Enable double-tap to seek</string>
+    <string name="double_tap_to_seek_enabled_description">Double-tap the left or right side of the video to skip backward or forward</string>
+    <string name="double_tap_to_seek_seconds_title">Double-tap to seek skip duration</string>
+    <string name="double_tap_to_seek_seconds_description">Seconds to skip when double-tapping the video</string>
+    <string name="hide_native_seek_buttons_title">Hide native seek buttons</string>
+    <string name="hide_native_seek_buttons_description">Hide rewind and fast-forward buttons from the video player controls</string>
+    <string name="remember_video_playback_position_enabled_title">Remember playback position</string>
+    <string name="remember_video_playback_position_enabled_description">Resume videos from the last stopped position</string>
 </resources>

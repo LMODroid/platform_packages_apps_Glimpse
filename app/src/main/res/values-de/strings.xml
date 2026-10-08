@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">Sperrbildschirm</string>
     <string name="set_wallpaper_both">Start- und Sperrbildschirm</string>
     <string name="warning_bin_time_period">Dateien werden nach 30 Tagen endgültig gelöscht.</string>
+    <string name="motion_photo_show_video">Video anzeigen</string>
+    <string name="motion_photo_show_photo">Foto anzeigen</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="general_header">Allgemein</string>
+    <string name="video_header">Video</string>
+    <string name="edge_tap_navigation_enable_title">Navigation per Bildschirmrand</string>
+    <string name="edge_tap_navigation_enabled_description">Tippe auf den linken oder rechten Bildschirmrand, um zwischen Medien zu navigieren</string>
+    <string name="double_tap_to_seek_enabled_title">Doppeltippen zum Spulen aktivieren</string>
+    <string name="double_tap_to_seek_enabled_description">Doppeltippe auf die linke oder rechte Seite des Videos, um zurück- oder vorzuspulen</string>
+    <string name="double_tap_to_seek_seconds_title">Sprunglänge beim Doppeltippen</string>
+    <string name="double_tap_to_seek_seconds_description">Sekunden, die beim Doppeltippen auf das Video übersprungen werden</string>
+    <string name="hide_native_seek_buttons_title">Native Vor- und Zurückspultasten ausblenden</string>
+    <string name="hide_native_seek_buttons_description">Blendet die Vor- und Zurückspultasten aus den Videosteuerungselementen aus</string>
+    <string name="remember_video_playback_position_enabled_title">Wiedergabeposition merken</string>
+    <string name="remember_video_playback_position_enabled_description">Videos an der zuletzt gestoppten Stelle fortsetzen</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">Écran de verrouillage</string>
     <string name="set_wallpaper_both">Écran d\'accueil et de verrouillage</string>
     <string name="warning_bin_time_period">Les fichiers seront définitivement supprimés après 30 jours.</string>
+    <string name="motion_photo_show_video">Afficher la vidéo</string>
+    <string name="motion_photo_show_photo">Afficher la photo</string>
+    <string name="title_activity_settings">Paramètres</string>
+    <string name="general_header">Général</string>
+    <string name="video_header">Vidéo</string>
+    <string name="edge_tap_navigation_enable_title">Navigation par pression sur les bords</string>
+    <string name="edge_tap_navigation_enabled_description">Appuyer sur le bord gauche ou droit de l\'écran pour naviguer entre les médias</string>
+    <string name="double_tap_to_seek_enabled_title">Activer le saut par double-appui</string>
+    <string name="double_tap_to_seek_enabled_description">Appuyer deux fois sur le côté gauche ou droit de la vidéo pour sauter en arrière ou en avant</string>
+    <string name="double_tap_to_seek_seconds_title">Intervalle du saut par double-appui</string>
+    <string name="double_tap_to_seek_seconds_description">Secondes à passer en double-cliquant sur la vidéo</string>
+    <string name="hide_native_seek_buttons_title">Masquer les boutons de saut</string>
+    <string name="hide_native_seek_buttons_description">Masquer les boutons d\'avance et retour rapides des commandes du lecteur vidéo</string>
+    <string name="remember_video_playback_position_enabled_title">Mémoriser la position de lecture</string>
+    <string name="remember_video_playback_position_enabled_description">Reprendre la lecture des vidéos là où elle s\'était arrêtée</string>
 </resources>

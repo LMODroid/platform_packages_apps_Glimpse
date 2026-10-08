@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2024 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string-array translatable="false" name="set_wallpaper_items">
+    <string-array name="set_wallpaper_items" translatable="false">
         <item>@string/set_wallpaper_home_screen</item>
         <item>@string/set_wallpaper_lock_screen</item>
         <item>@string/set_wallpaper_both</item>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -18,61 +18,51 @@
     <plurals name="album_thumbnail_items">
         <item quantity="one">פריט</item>
         <item quantity="two">%d פריטים</item>
-        <item quantity="many">%d פריטים</item>
         <item quantity="other">%d פריטים</item>
     </plurals>
     <plurals name="delete_file_forever_confirm_message">
         <item quantity="one">האם בוודאות ברצונך למחוק את הקובץ לצמיתות?</item>
         <item quantity="two">האם בוודאות ברצונך למחוק %d קבצים לצמיתות?</item>
-        <item quantity="many">האם בוודאות ברצונך למחוק %d קבצים לצמיתות?</item>
         <item quantity="other">האם בוודאות ברצונך למחוק %d קבצים לצמיתות?</item>
     </plurals>
     <plurals name="delete_file_forever_successful">
         <item quantity="one">קובץ נמחק לצמיתות</item>
         <item quantity="two">%d קבצים נמחקו לצמיתות</item>
-        <item quantity="many">%d קבצים נמחקו לצמיתות</item>
         <item quantity="other">%d קבצים נמחקו לצמיתות</item>
     </plurals>
     <plurals name="delete_file_forever_unsuccessful">
         <item quantity="one">לא ניתן למחוק לצמיתות את הקובץ</item>
         <item quantity="two">לא ניתן למחוק לצמיתות %d קבצים</item>
-        <item quantity="many">לא ניתן למחוק לצמיתות %d קבצים</item>
         <item quantity="other">לא ניתן למחוק לצמיתות %d קבצים</item>
     </plurals>
     <plurals name="move_file_to_trash_confirm_message">
         <item quantity="one">האם בוודאות ברצונך להעביר קובץ אחד לאשפה?</item>
         <item quantity="two">האם בוודאות ברצונך להעביר %d קבצים לאשפה?</item>
-        <item quantity="many">האם בוודאות ברצונך להעביר %d קבצים לאשפה?</item>
         <item quantity="other">האם בוודאות ברצונך להעביר %d קבצים לאשפה?</item>
     </plurals>
     <plurals name="move_file_to_trash_successful">
         <item quantity="one">קובץ הועבר לאשפה</item>
         <item quantity="two">%d קבצים הועברו לאשפה</item>
-        <item quantity="many">%d קבצים הועברו לאשפה</item>
         <item quantity="other">%d קבצים הועברו לאשפה</item>
     </plurals>
     <plurals name="move_file_to_trash_unsuccessful">
         <item quantity="one">לא ניתן להעביר את הקובץ לאשפה</item>
         <item quantity="two">לא ניתן להעביר %d קבצים לאשפה</item>
-        <item quantity="many">לא ניתן להעביר %d קבצים לאשפה</item>
         <item quantity="other">לא ניתן להעביר %d קבצים לאשפה</item>
     </plurals>
     <plurals name="restore_file_from_trash_confirm_message">
         <item quantity="one">האם בוודאות ברצונך לשחזר קובץ אחד מהאשפה?</item>
         <item quantity="two">האם בוודאות ברצונך לשחזר %d קבצים מהאשפה?</item>
-        <item quantity="many">האם בוודאות ברצונך לשחזר %d קבצים מהאשפה?</item>
         <item quantity="other">האם בוודאות ברצונך לשחזר %d קבצים מהאשפה?</item>
     </plurals>
     <plurals name="restore_file_from_trash_successful">
         <item quantity="one">הקובץ שוחזר מהאשפה</item>
         <item quantity="two">%d הקבצים שוחזרו מהאשפה</item>
-        <item quantity="many">%d קבצים שוחזרו מהאשפה</item>
         <item quantity="other">%d קבצים שוחזרו מהאשפה</item>
     </plurals>
     <plurals name="restore_file_from_trash_unsuccessful">
         <item quantity="one">לא ניתן לשחזר את הקובץ מהאשפה</item>
         <item quantity="two">לא ניתן לשחזר %d קבצים מהאשפה</item>
-        <item quantity="many">לא ניתן לשחזר %d קבצים מהאשפה</item>
         <item quantity="other">לא ניתן לשחזר %d קבצים מהאשפה</item>
     </plurals>
     <string name="manage_media_permission_title">ניהול הרשאות מדיה</string>
@@ -103,7 +93,6 @@
     <plurals name="thumbnail_selection_count">
         <item quantity="one">%d נבחר</item>
         <item quantity="two">%d נבחרו</item>
-        <item quantity="many">%d נבחרו</item>
         <item quantity="other">%d נבחרו</item>
     </plurals>
     <string name="pick_a_photo">בחירת תמונה</string>
@@ -117,4 +106,19 @@
     <string name="set_wallpaper_lock_screen">מסך נעילה</string>
     <string name="set_wallpaper_both">מסך בית ומסך נעילה</string>
     <string name="warning_bin_time_period">הקבצים יימחקו לצמיתות לאחר 30 יום.</string>
+    <string name="motion_photo_show_video">הצגת וידאו</string>
+    <string name="motion_photo_show_photo">הצגת תמונה</string>
+    <string name="title_activity_settings">הגדרות</string>
+    <string name="general_header">כללי</string>
+    <string name="video_header">וידאו</string>
+    <string name="edge_tap_navigation_enable_title">ניווט בהקשה על הקצה</string>
+    <string name="edge_tap_navigation_enabled_description">הקשה על הקצה השמאלי או הימני של המסך כדי לנווט בין מדיה</string>
+    <string name="double_tap_to_seek_enabled_title">הפעלת הקשה כפולה להתקדמות</string>
+    <string name="double_tap_to_seek_enabled_description">הקשה כפולה על הצד השמאלי או הימני של הוידיאו כדי לדלג אחורה או קדימה</string>
+    <string name="double_tap_to_seek_seconds_title">הקשה כפולה להצגת זמן הדילוג</string>
+    <string name="double_tap_to_seek_seconds_description">כמה שניות לדלג בכל הקשה כפולה על הוידיאו</string>
+    <string name="hide_native_seek_buttons_title">הסתרת כפתורי תצוגה מקוריים</string>
+    <string name="hide_native_seek_buttons_description">הסתרת הכפתורים אחורה וקדימה מפקדי ניגון המדיה</string>
+    <string name="remember_video_playback_position_enabled_title">זכירת מיקום הניגון</string>
+    <string name="remember_video_playback_position_enabled_description">המשך הניגון ממקום העצירה האחרון</string>
 </resources>

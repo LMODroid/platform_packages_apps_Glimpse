@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -10,6 +10,7 @@
     <string name="categories_title">Kategori</string>
     <string name="album_favorites">Favorit</string>
     <string name="album_trash">Sampah</string>
+    <string name="album_reels">Reels</string>
     <string name="album_videos">Video</string>
     <plurals name="album_thumbnail_items">
         <item quantity="other">%d item</item>
@@ -45,9 +46,17 @@
     <string name="media_info_unknown">Tak dikenal</string>
     <string name="media_info_add_description_hint">Tambahkan deskripsi</string>
     <string name="media_info_location_loading_placeholder">Memuat...</string>
+    <string name="media_info_location_open_with">Lihat lokasi dengan</string>
+    <string name="intent_action_not_supported">Tindakan tidak didukung</string>
     <string name="intent_media_not_found">Media tidak ditemukan</string>
+    <string name="intent_media_type_not_found">Tipe media tidak ditemukan</string>
+    <string name="intent_media_type_not_supported">Tipe media tidak didukung</string>
+    <string name="intent_wallpaper_cannot_be_changed">Wallpaper tidak dapat diubah</string>
+    <string name="file_action_add_to_favorites">Tambahkan ke favorit</string>
     <string name="file_action_delete_forever">Hapus selamanya</string>
+    <string name="file_action_edit">Edit</string>
     <string name="file_action_empty_trash">Kosongkan Sampah</string>
+    <string name="file_action_information">Informasi</string>
     <string name="file_action_move_to_trash">Pindah ke sampah</string>
     <string name="file_action_remove_from_favorites">Hapus dari favorit</string>
     <string name="file_action_restore_from_trash">Pulihkan dari sampah</string>
@@ -64,5 +73,13 @@
     <string name="picker_done">Selesai</string>
     <string name="set_wallpaper_label">Wallpaper</string>
     <string name="set_wallpaper">Atur wallpaper</string>
+    <string name="set_wallpaper_dialog_title">Aktifkan wallpaper</string>
     <string name="set_wallpaper_home_screen">Layar beranda</string>
+    <string name="motion_photo_show_video">Tampilkan video</string>
+    <string name="motion_photo_show_photo">Tampilkan foto</string>
+    <string name="title_activity_settings">Pengaturan</string>
+    <string name="general_header">Umum</string>
+    <string name="video_header">Video</string>
+    <string name="remember_video_playback_position_enabled_title">Ingat posisi pemutaran</string>
+    <string name="remember_video_playback_position_enabled_description">Lanjutkan video dari posisi terakhir berhenti</string>
 </resources>

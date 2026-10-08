@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Myndasafn</string>
     <string name="app_permissions_toast">Heimildir ekki veittar af notandanum.</string>
-    <string name="reels_title">Spólur</string>
+    <string name="reels_title">Raðir</string>
     <string name="albums_title">Albúm</string>
     <string name="categories_title">Flokkar</string>
     <string name="album_favorites">Eftirlæti</string>
     <string name="album_trash">Rusl</string>
-    <string name="album_reels">Spólur</string>
+    <string name="album_reels">Raðir</string>
     <string name="album_photos">Ljósmyndir</string>
     <string name="album_videos">Myndskeið</string>
     <string name="manage_media_permission_title">Stýra heimildum á myndefni</string>

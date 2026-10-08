@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -84,4 +84,19 @@
     <string name="set_wallpaper_lock_screen">Màn hình khóa</string>
     <string name="set_wallpaper_both">Màn hình chính và Màn hình khóa</string>
     <string name="warning_bin_time_period">Các tập tin sẽ được xoá vĩnh viễn sau 30 ngày.</string>
+    <string name="motion_photo_show_video">Hiển thị video</string>
+    <string name="motion_photo_show_photo">Hiển thị hình ảnh</string>
+    <string name="title_activity_settings">Cài đặt</string>
+    <string name="general_header">Chung</string>
+    <string name="video_header">Video</string>
+    <string name="edge_tap_navigation_enable_title">Chuyển đổi bằng cách nhấn vào cạnh</string>
+    <string name="edge_tap_navigation_enabled_description">Nhấn vào cạnh trái hoặc phải của màn hình để chuyển đổi giữa các mục đa phương tiện</string>
+    <string name="double_tap_to_seek_enabled_title">Bật nhấn hai lần để tua</string>
+    <string name="double_tap_to_seek_enabled_description">Nhấn đúp vào cạnh trái hoặc hoặc của video để tua lại hoặc tua tới</string>
+    <string name="double_tap_to_seek_seconds_title">Nhấn đúp để tua nhanh</string>
+    <string name="double_tap_to_seek_seconds_description">Số giây sẽ tua nhanh khi nhấn đúp vào video</string>
+    <string name="hide_native_seek_buttons_title">Ẩn các nút tua gốc</string>
+    <string name="hide_native_seek_buttons_description">Ẩn các nút tua lại và tua nhanh trên điều khiển trình phát video</string>
+    <string name="remember_video_playback_position_enabled_title">Nhớ vị trí phát lại</string>
+    <string name="remember_video_playback_position_enabled_description">Tiếp tục từ vị trí lần cuối dừng phát video</string>
 </resources>

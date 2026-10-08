@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">Ecrã de bloqueio</string>
     <string name="set_wallpaper_both">Página Inicial e ecrã de bloqueio</string>
     <string name="warning_bin_time_period">Os ficheiros serão apagados permanentemente passados 30 dias.</string>
+    <string name="motion_photo_show_video">Mostrar vídeo</string>
+    <string name="motion_photo_show_photo">Mostrar foto</string>
+    <string name="title_activity_settings">Definições</string>
+    <string name="general_header">Gerais</string>
+    <string name="video_header">Vídeo</string>
+    <string name="edge_tap_navigation_enable_title">Navegação pela borda</string>
+    <string name="edge_tap_navigation_enabled_description">Toque na borda esquerda ou direita do ecrã para navegar entre multimédia</string>
+    <string name="double_tap_to_seek_enabled_title">Ativar toque duplo para saltar</string>
+    <string name="double_tap_to_seek_enabled_description">Toque duas vezes no lado esquerdo ou direito do vídeo para saltar para trás ou para frente</string>
+    <string name="double_tap_to_seek_seconds_title">Tempo a saltar com duplo toque</string>
+    <string name="double_tap_to_seek_seconds_description">Segundos a saltar quando tocar duas vezes no vídeo</string>
+    <string name="hide_native_seek_buttons_title">Ocultar botões nativos de salto</string>
+    <string name="hide_native_seek_buttons_description">Ocultar dos controlos do reprodutor de vídeo os botões de retroceder e avançar rapidamente</string>
+    <string name="remember_video_playback_position_enabled_title">Lembrar progresso de reprodução</string>
+    <string name="remember_video_playback_position_enabled_description">Retomar os vídeos a partir de onde parou</string>
 </resources>

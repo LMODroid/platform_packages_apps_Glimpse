@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">Schermata di blocco</string>
     <string name="set_wallpaper_both">Schermata iniziale e di blocco</string>
     <string name="warning_bin_time_period">I file verranno eliminati definitivamente dopo 30 giorni.</string>
+    <string name="motion_photo_show_video">Mostra video</string>
+    <string name="motion_photo_show_photo">Mostra foto</string>
+    <string name="title_activity_settings">Impostazioni</string>
+    <string name="general_header">Generali</string>
+    <string name="video_header">Video</string>
+    <string name="edge_tap_navigation_enable_title">Navigazione tramite tocco laterale</string>
+    <string name="edge_tap_navigation_enabled_description">Tocca il bordo sinistro o destro dello schermo per navigare tra i file multimediali</string>
+    <string name="double_tap_to_seek_enabled_title">Abilita doppio tocco per saltare</string>
+    <string name="double_tap_to_seek_enabled_description">Doppio tocco sul lato sinistro o destro del video per saltare indietro o in avanti</string>
+    <string name="double_tap_to_seek_seconds_title">Durata del salto al doppio tocco</string>
+    <string name="double_tap_to_seek_seconds_description">Secondi da saltare quando si tocca due volte il video</string>
+    <string name="hide_native_seek_buttons_title">Nascondi pulsanti di salto</string>
+    <string name="hide_native_seek_buttons_description">Nascondi i pulsanti di salto in avanti e indietro dai controlli del lettore video</string>
+    <string name="remember_video_playback_position_enabled_title">Memorizza l\'avanzamento della riproduzione</string>
+    <string name="remember_video_playback_position_enabled_description">Riprendi i video dal punto dell\'ultima interruzione</string>
 </resources>

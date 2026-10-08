@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">پێشانگا</string>
+    <string name="app_permissions_toast">ڕێپێدانەکان لەلایەن بەکارهێنەرەوە نەدراون.</string>
+    <string name="reels_title">گرتە کورتەکان</string>
+    <string name="albums_title">ئەلبوومەکان</string>
+    <string name="categories_title">پۆلەکان</string>
+    <string name="library_title">کتێبخانە</string>
+    <string name="album_favorites">دڵخوازەکان</string>
+    <string name="album_trash">تەنەکەخۆڵ</string>
+    <string name="album_reels">گرتە کورتەکان</string>
+    <string name="album_photos">وێنەکان</string>
+    <string name="album_videos">ڤیدیۆکان</string>
+    <plurals name="album_thumbnail_items">
+        <item quantity="one">%d بڕگە</item>
+        <item quantity="other">%d بڕگە</item>
+    </plurals>
+    <plurals name="delete_file_forever_confirm_message">
+        <item quantity="one">ئایا دڵنیایت کە دەتەوێت ئەم پەڕگەیە بۆ هەمیشە بسڕیتەوە؟</item>
+        <item quantity="other">ئایا دڵنیایت کە دەتەوێت %d پەڕگە بۆ هەمیشە بسڕیتەوە؟</item>
+    </plurals>
+    <plurals name="delete_file_forever_successful">
+        <item quantity="one">پەڕگەکە بۆ هەمیشە سڕایەوە</item>
+        <item quantity="other">%d پەڕگە بۆ هەمیشە سڕانەوە</item>
+    </plurals>
+    <plurals name="delete_file_forever_unsuccessful">
+        <item quantity="one">نەتوانرا پەڕگەکە بۆ هەمیشە بسڕدرێتەوە</item>
+        <item quantity="other">نەتوانرا %d پەڕگە بۆ هەمیشە بسڕدرێنەوە</item>
+    </plurals>
+    <plurals name="move_file_to_trash_confirm_message">
+        <item quantity="one">ئایا دڵنیایت کە دەتەوێت پەڕگەیەک بگوازیتەوە بۆ تەنەکەخۆڵ؟</item>
+        <item quantity="other">ئایا دڵنیایت کە دەتەوێت %d پەڕگە بگوازیتەوە بۆ تەنەکەخۆڵ؟</item>
+    </plurals>
+    <plurals name="move_file_to_trash_successful">
+        <item quantity="one">پەڕگەکە گوازرایەوە بۆ تەنەکەخۆڵ</item>
+        <item quantity="other">%d پەڕگە گوازرانەوە بۆ تەنەکەخۆڵ</item>
+    </plurals>
+    <plurals name="move_file_to_trash_unsuccessful">
+        <item quantity="one">نەتوانرا پەڕگەکە بگوازرێتەوە بۆ تەنەکەخۆڵ</item>
+        <item quantity="other">نەتوانرا %d پەڕگە بگوازرێنەوە بۆ تەنەکەخۆڵ</item>
+    </plurals>
+    <plurals name="restore_file_from_trash_confirm_message">
+        <item quantity="one">ئایا دڵنیایت کە دەتەوێت پەڕگەیەک لە تەنەکەخۆڵ بگەڕێنیتەوە؟</item>
+        <item quantity="other">ئایا دڵنیایت کە دەتەوێت %d پەڕگە لە تەنەکەخۆڵ بگەڕێنیتەوە؟</item>
+    </plurals>
+    <plurals name="restore_file_from_trash_successful">
+        <item quantity="one">پەڕگەکە لە تەنەکەخۆڵ گەڕایەوە</item>
+        <item quantity="other">%d پەڕگە لە تەنەکەخۆڵ گەڕانەوە</item>
+    </plurals>
+    <plurals name="restore_file_from_trash_unsuccessful">
+        <item quantity="one">نەتوانرا پەڕگەکە لە تەنەکەخۆڵ بگەڕێندرێتەوە</item>
+        <item quantity="other">نەتوانرا %d پەڕگە لە تەنەکەخۆڵ بگەڕێندرێنەوە</item>
+    </plurals>
+    <string name="manage_media_permission_title">بەڕێوبەرایەتیی ڕێپێدانی مێدیا</string>
+    <string name="manage_media_permission_message">بۆ بەڕێوەبردنی باشتر، ڕێگە بدە بە بەرنامەکە کە دەستی بگات بە پەڕگەکانی مێدیا</string>
+    <string name="media_info_unknown">نەناسراو</string>
+    <string name="media_info_add_description_hint">وەسفێک زیاد بکە</string>
+    <string name="media_info_write_description_failed">گۆڕینی وەسفی مێدیا سەرکەوتوو نەبوو</string>
+    <string name="media_info_location_loading_placeholder">کۆ دەکرێتەوە…</string>
+    <string name="media_info_location_open_with">بینینی شوێن لە ڕێگەی</string>
+    <string name="intent_action_not_supported">فرمانەکە پاڵپشتی ناکرێت</string>
+    <string name="intent_media_not_found">مێدیا نەدۆزرایەوە</string>
+    <string name="intent_media_type_not_found">جۆری مێدیا نەدۆزرایەوە</string>
+    <string name="intent_media_type_not_supported">جۆری مێدیا پاڵپشتی ناکرێت</string>
+    <string name="intent_no_system_wallpaper_cropper_available">هیچ ئامرازێکی سیستم بۆ بڕینی وێنە نییە</string>
+    <string name="intent_wallpaper_cannot_be_changed">وێنەی پشتێنە ناگۆڕدرێت</string>
+    <string name="file_action_add_to_favorites">بیکە بە دڵخواز</string>
+    <string name="file_action_delete_forever">بۆ هەمیشە بسڕەوە</string>
+    <string name="file_action_edit">دەستکاری بکە</string>
+    <string name="file_action_empty_trash">تەنەکەخۆڵ خاڵی بکەرەوە</string>
+    <string name="file_action_information">زانیاری</string>
+    <string name="file_action_move_to_trash">بیخە تەنەکەخۆڵ</string>
+    <string name="file_action_remove_from_favorites">لە دڵخوازەکان لایبەر</string>
+    <string name="file_action_restore_from_trash">لە تەنەکەخۆڵ بگەڕێنەوە</string>
+    <string name="file_action_share">هاوبەشکردن</string>
+    <string name="file_action_use_as">بەکاربهێنە وەک</string>
+    <string name="file_action_undo_action">بگەڕێوە</string>
+    <string name="no_media">هیچ مێدیایەک نییە</string>
+    <plurals name="thumbnail_selection_count">
+        <item quantity="one">%d هەڵبژێردرا</item>
+        <item quantity="other">%d هەڵبژێردرا</item>
+    </plurals>
+    <string name="pick_a_photo">وێنەیەک هەڵبژێرە</string>
+    <string name="pick_a_video">ڤیدیۆیەک هەڵبژێرە</string>
+    <string name="pick_a_media">مێدیایەک هەڵبژێرە</string>
+    <string name="picker_done">تەواو</string>
+    <string name="set_wallpaper_label">وێنەی پشتێنە</string>
+    <string name="set_wallpaper">وێنەی پشتێنە دابنێ</string>
+    <string name="set_wallpaper_dialog_title">دانانی وێنەی پشتێنە لەسەر</string>
+    <string name="set_wallpaper_home_screen">ڕوونمای سەرەکی</string>
+    <string name="set_wallpaper_lock_screen">قوفڵی ڕوونما</string>
+    <string name="set_wallpaper_both">هەردوو ڕوونمای سەرەکی و قوفڵ</string>
+    <string name="warning_bin_time_period">پەڕگەکان دوای 30 ڕۆژ بۆ هەمیشە دەسڕدرێنەوە.</string>
+    <string name="motion_photo_show_video">پیشاندانی ڤیدیۆ</string>
+    <string name="motion_photo_show_photo">پیشاندانی وێنە</string>
+    <string name="title_activity_settings">ڕێکخستنەکان</string>
+    <string name="general_header">گشتی</string>
+    <string name="video_header">ڤیدیۆ</string>
+    <string name="edge_tap_navigation_enable_title">ڕێدۆزی بە لێدان لە لێوارەکان</string>
+    <string name="edge_tap_navigation_enabled_description">دەست لە لێواری چەپ یان ڕاستی ڕوونما بدە بۆ گواستنەوە لە نێوان میدیاکان</string>
+    <string name="double_tap_to_seek_enabled_title">چالاککردنی دووجار لێدان بۆ پێش و پاش کردن</string>
+    <string name="double_tap_to_seek_enabled_description">دووجار دەست لە لای چەپ یان ڕاستی ڤیدیۆکە بدە بۆ چوونە دواوە یان پێشەوە</string>
+    <string name="double_tap_to_seek_seconds_title">ماوەی بازدان بە دووجار داگرتن</string>
+    <string name="double_tap_to_seek_seconds_description">ئەو چرکەیانەی باز دەدرێت کاتێک دووجار دەست لە ڤیدیۆکە دەدرێت</string>
+    <string name="hide_native_seek_buttons_title">شاردنەوەی دوگمە بنەڕەتییەکانی پێش و پاش کردن </string>
+    <string name="hide_native_seek_buttons_description">شاردنەوەی دوگمەکانی گەڕانەوە و پێشخستن لە کۆنتڕۆڵەکانی لێدەری ڤیدیۆ</string>
+    <string name="remember_video_playback_position_enabled_title">لە بیر مانەوەی شوێنی لێدان</string>
+    <string name="remember_video_playback_position_enabled_description">دەستپێکردنەوەی ڤیدیۆکان لەو شوێنەوەی کە وەستاوە</string>
+</resources>

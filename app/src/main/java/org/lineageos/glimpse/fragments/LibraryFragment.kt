@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -14,8 +14,6 @@ import androidx.core.view.updateLayoutParams
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.google.android.material.appbar.AppBarLayout
-import com.google.android.material.shape.MaterialShapeDrawable
 import org.lineageos.glimpse.R
 import org.lineageos.glimpse.ext.getViewProperty
 import org.lineageos.glimpse.models.AlbumType
@@ -27,7 +25,6 @@ import org.lineageos.glimpse.ui.views.ListItem
  */
 class LibraryFragment : Fragment(R.layout.fragment_library) {
     // Views
-    private val appBarLayout by getViewProperty<AppBarLayout>(R.id.appBarLayout)
     private val favoritesAlbumListItem by getViewProperty<ListItem>(R.id.favoritesAlbumListItem)
     private val photosAlbumListItem by getViewProperty<ListItem>(R.id.photosAlbumListItem)
     private val libraryNestedScrollView by getViewProperty<NestedScrollView>(R.id.libraryNestedScrollView)
@@ -36,10 +33,6 @@ class LibraryFragment : Fragment(R.layout.fragment_library) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val context = requireContext()
-
-        appBarLayout.statusBarForeground = MaterialShapeDrawable.createWithElevationOverlay(context)
 
         ViewCompat.setOnApplyWindowInsetsListener(view) { _, windowInsets ->
             val insets = windowInsets.getInsets(

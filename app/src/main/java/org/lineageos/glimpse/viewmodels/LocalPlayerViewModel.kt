@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -12,7 +12,10 @@ import androidx.lifecycle.viewModelScope
 import androidx.media3.common.AudioAttributes
 import androidx.media3.common.C
 import androidx.media3.common.MediaItem
+import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.exoplayer.source.ProgressiveMediaSource
+import androidx.preference.PreferenceManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -27,15 +30,32 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
 import org.lineageos.glimpse.ext.applicationContext
+import org.lineageos.glimpse.ext.doubleTapToSeekEnabled
+import org.lineageos.glimpse.ext.doubleTapToSeekSeconds
+import org.lineageos.glimpse.ext.edgeTapNavigationEnabled
+import org.lineageos.glimpse.ext.getVideoPlaybackPosition
+import org.lineageos.glimpse.ext.hideNativeSeekButtons
 import org.lineageos.glimpse.ext.isPlayingFlow
+import org.lineageos.glimpse.ext.rememberVideoPlaybackPositionEnabled
+import org.lineageos.glimpse.ext.removeVideoPlaybackPosition
+import org.lineageos.glimpse.ext.setVideoPlaybackPosition
 import org.lineageos.glimpse.models.AlbumType
+import org.lineageos.glimpse.models.MediaType
+import org.lineageos.glimpse.models.MotionPhoto
 import org.lineageos.glimpse.models.RequestStatus
 import org.lineageos.glimpse.models.RequestStatus.Companion.map
+import org.lineageos.glimpse.utils.MotionPhotoExtractor
+import org.lineageos.glimpse.utils.media3.ByteBufferDataSource
 
 class LocalPlayerViewModel(
     application: Application,
     savedStateHandle: SavedStateHandle,
 ) : GlimpseViewModel(application) {
+    // Shared preferences
+    private val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(
+        applicationContext
+    )
+
     // ExoPlayer
     val exoPlayer = ExoPlayer.Builder(applicationContext)
         .setAudioAttributes(
@@ -262,6 +282,57 @@ class LocalPlayerViewModel(
             initialValue = null,
         )
 
+    /**
+     * Motion photo contained in the displayed media.
+     */
+    @OptIn(ExperimentalCoroutinesApi::class)
+    val motionPhoto = displayedMedia
+        .mapLatest { media ->
+            media?.takeIf { it.mediaType == MediaType.IMAGE }?.let {
+                MotionPhotoExtractor.extractMotionPhoto(applicationContext, it.uri)
+            }
+        }
+        .flowOn(Dispatchers.IO)
+        .stateIn(
+            viewModelScope,
+            started = SharingStarted.WhileSubscribed(),
+            initialValue = null,
+        )
+
+    /**
+     * Whether we're currently playing a motion photo video.
+     */
+    private val motionPhotoEnabled = MutableStateFlow(false)
+
+    /**
+     * Displayed media to motion photo if present and requested.
+     */
+    val displayedMediaToMotionPhoto = combine(
+        displayedMedia,
+        motionPhoto,
+        motionPhotoEnabled
+    ) { displayedMedia, motionPhoto, motionPhotoEnabled ->
+        displayedMedia to motionPhoto.takeIf { motionPhotoEnabled }
+    }
+        .flowOn(Dispatchers.IO)
+        .stateIn(
+            viewModelScope,
+            started = SharingStarted.WhileSubscribed(),
+            initialValue = null to null,
+        )
+
+    val doubleTapToSeekEnabled: Boolean
+        get() = sharedPreferences.doubleTapToSeekEnabled
+
+    val doubleTapToSeekSeconds: Int
+        get() = sharedPreferences.doubleTapToSeekSeconds
+
+    val hideNativeSeekButtons: Boolean
+        get() = sharedPreferences.hideNativeSeekButtons
+
+    val edgeTapNavigationEnabled: Boolean
+        get() = sharedPreferences.edgeTapNavigationEnabled
+
     override fun onCleared() {
         exoPlayer.release()
 
@@ -294,9 +365,58 @@ class LocalPlayerViewModel(
     }
 
     fun setCurrentVideoUri(uri: Uri) {
+        val startPositionMs = when (sharedPreferences.rememberVideoPlaybackPositionEnabled) {
+            true -> sharedPreferences.getVideoPlaybackPosition(uri)
+            false -> 0L
+        }
+
         exoPlayer.apply {
             setMediaItem(MediaItem.fromUri(uri))
             prepare()
+            if (startPositionMs > 0L) {
+                seekTo(startPositionMs)
+            }
+            playWhenReady = true
+        }
+    }
+
+    fun saveCurrentVideoPosition(currentVideoUri: Uri?) {
+        val currentVideoUri = currentVideoUri ?: return
+
+        if (!sharedPreferences.rememberVideoPlaybackPositionEnabled) {
+            return
+        }
+
+        val currentPosition = exoPlayer.currentPosition
+        val duration = exoPlayer.duration
+        val nearEnd = duration > 0L &&
+                currentPosition >= duration - FINISHED_VIDEO_POSITION_TOLERANCE_MS
+
+        when {
+            currentPosition <= 0L -> sharedPreferences.removeVideoPlaybackPosition(currentVideoUri)
+            nearEnd -> sharedPreferences.removeVideoPlaybackPosition(currentVideoUri)
+            else -> sharedPreferences.setVideoPlaybackPosition(
+                currentVideoUri, currentPosition
+            )
+        }
+    }
+
+    fun toggleMotionPhotoEnabled(motionPhotoEnabled: Boolean = !this.motionPhotoEnabled.value) {
+        this.motionPhotoEnabled.value = motionPhotoEnabled
+    }
+
+    @androidx.annotation.OptIn(UnstableApi::class)
+    fun playMotionPhoto(motionPhoto: MotionPhoto) {
+        val dataSourceFactory = ByteBufferDataSource.Factory(motionPhoto.videoBuffer)
+        val mediaSource = ProgressiveMediaSource.Factory(dataSourceFactory)
+            .createMediaSource(MediaItem.fromUri("motion-photo://video"))
+
+        exoPlayer.apply {
+            setMediaSource(mediaSource)
+            prepare()
+            motionPhoto.metadata.presentationTimestampUs?.let {
+                seekTo(it / 1000)
+            }
             playWhenReady = true
         }
     }
@@ -324,5 +444,7 @@ class LocalPlayerViewModel(
 
     companion object {
         private const val MEDIA_POSITION_KEY = "media_position"
+
+        private const val FINISHED_VIDEO_POSITION_TOLERANCE_MS = 2_000L
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">Pantalla de bloqueig</string>
     <string name="set_wallpaper_both">Pantalla d\'inici i de bloqueig</string>
     <string name="warning_bin_time_period">Els fitxers se suprimiran permanentment al cap de 30 dies.</string>
+    <string name="motion_photo_show_video">Mostra el vídeo</string>
+    <string name="motion_photo_show_photo">Mostra la foto</string>
+    <string name="title_activity_settings">Configuració</string>
+    <string name="general_header">General</string>
+    <string name="video_header">Vídeo</string>
+    <string name="edge_tap_navigation_enable_title">Navegació prement la vora</string>
+    <string name="edge_tap_navigation_enabled_description">Toqueu la vora esquerra o dreta de la pantalla per navegar entre els continguts multimèdia</string>
+    <string name="double_tap_to_seek_enabled_title">Activa el doble toc per cercar</string>
+    <string name="double_tap_to_seek_enabled_description">Toqueu dues vegades el costat esquerre o dret del vídeo per saltar enrere o endavant</string>
+    <string name="double_tap_to_seek_seconds_title">Toca dues vegades per cercar la durada de salt</string>
+    <string name="double_tap_to_seek_seconds_description">Segons que se saltaran en tocar dues vegades el vídeo</string>
+    <string name="hide_native_seek_buttons_title">Amaga els botons de cerca natius</string>
+    <string name="hide_native_seek_buttons_description">Amagueu els botons de rebobinar i avançar ràpidament dels controls del reproductor de vídeo</string>
+    <string name="remember_video_playback_position_enabled_title">Recorda la posició de reproducció</string>
+    <string name="remember_video_playback_position_enabled_description">Repreneu els vídeos des de l\'última posició aturada</string>
 </resources>

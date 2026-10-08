@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">Záróképernyőre</string>
     <string name="set_wallpaper_both">Kezdő- és Záróképernyőre</string>
     <string name="warning_bin_time_period">A fájlok 30 nap elteltével véglegesen törlődnek.</string>
+    <string name="motion_photo_show_video">Videó megjelenítése</string>
+    <string name="motion_photo_show_photo">Fotó megjelenítése</string>
+    <string name="title_activity_settings">Beállítások</string>
+    <string name="general_header">Általános</string>
+    <string name="video_header">Videó</string>
+    <string name="edge_tap_navigation_enable_title">Oldalérintés-navigáció</string>
+    <string name="edge_tap_navigation_enabled_description">A médiatartalmak közötti navigáláshoz érintse meg a képernyő bal vagy jobb szélét</string>
+    <string name="double_tap_to_seek_enabled_title">A duplakoppintásos keresés engedélyezése</string>
+    <string name="double_tap_to_seek_enabled_description">Előre- vagy visszaugráshoz érintse meg duplán a videó bal vagy jobb oldalát</string>
+    <string name="double_tap_to_seek_seconds_title">A dupla érintéssel továbbtekerés hossza</string>
+    <string name="double_tap_to_seek_seconds_description">A videó dupla koppintásakor átugrandó másodpercek száma</string>
+    <string name="hide_native_seek_buttons_title">A gyári keresőgombok elrejtése</string>
+    <string name="hide_native_seek_buttons_description">Visszatekerés és előretekerés gombok elrejtése a videolejátszó vezérlői közül</string>
+    <string name="remember_video_playback_position_enabled_title">Lejátszási pozíció megjegyzése</string>
+    <string name="remember_video_playback_position_enabled_description">Videók folytatása az utolsó leállítási pozíciótól</string>
 </resources>

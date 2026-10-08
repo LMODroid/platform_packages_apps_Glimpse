@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">قۇلۇپ ئېكران</string>
     <string name="set_wallpaper_both">باش ئېكران ۋە قۇلۇپ ئېكران</string>
     <string name="warning_bin_time_period">ھۆججەت 30 كۈندىن كېيىن مەڭگۈلۈك ئۆچۈرۈلىدۇ.</string>
+    <string name="motion_photo_show_video">سىن كۆرسەت</string>
+    <string name="motion_photo_show_photo">سۈرەت كۆرسەت</string>
+    <string name="title_activity_settings">تەڭشەك</string>
+    <string name="general_header">ئادەتتىكى</string>
+    <string name="video_header">سىن</string>
+    <string name="edge_tap_navigation_enable_title">گىرۋەك چېكىش يولباشچى</string>
+    <string name="edge_tap_navigation_enabled_description">ۋاسىتە ئارىسىدا ئالماشتۇرۇشتا ئېكراننىڭ ئوڭ ياكى سول گىرۋىكى چېكىلىدۇ</string>
+    <string name="double_tap_to_seek_enabled_title">قوش چېكىلسە ئىزدەشنى قوزغىتىدۇ</string>
+    <string name="double_tap_to_seek_enabled_description">سىننىڭ ئوڭ ياكى سول يېنى قوش چېكىلسە تېز ئالدىغا ياكى تېز كەينىگە ئاتلايدۇ</string>
+    <string name="double_tap_to_seek_seconds_title">قوش چېكىلسە مۇئەييەن داۋاملىشىش ۋاقتىدىن ئاتلايدۇ</string>
+    <string name="double_tap_to_seek_seconds_description">سىن قوش چېكىلسە ئاتلايدىغان سېكۇنت سانى</string>
+    <string name="hide_native_seek_buttons_title">ئەسلى ئىزدەش توپچىنى يوشۇر</string>
+    <string name="hide_native_seek_buttons_description">سىن ياڭراتقۇ تىزگىنىدىكى تېز ئالدىغا ۋە تېز كەينىگە توپچىنى يوشۇرىدۇ</string>
+    <string name="remember_video_playback_position_enabled_title">ياڭرىتىش ئورنىنى ئەستە تۇتىدۇ</string>
+    <string name="remember_video_playback_position_enabled_description">سىننى ئالدىنقى ېتىم توختىغان ئورۇندىن ياڭرىتىشنى داۋاملاشتۇرىدۇ</string>
 </resources>

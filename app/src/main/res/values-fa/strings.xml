@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -95,4 +95,19 @@
     <string name="set_wallpaper_lock_screen">صفحه قفل</string>
     <string name="set_wallpaper_both">صفحه اصلی و قفل</string>
     <string name="warning_bin_time_period">فایل‌ها پس از ۳۰ روز به طور دائمی حذف خواهند شد.</string>
+    <string name="motion_photo_show_video">نمایش ویدئو</string>
+    <string name="motion_photo_show_photo">نمایش تصویر</string>
+    <string name="title_activity_settings">تنظیمات</string>
+    <string name="general_header">عمومی</string>
+    <string name="video_header">ویدئو</string>
+    <string name="edge_tap_navigation_enable_title">ناوبری با لمس لبه</string>
+    <string name="edge_tap_navigation_enabled_description">برای حرکت بین صفحه، روی لبه چپ یا راست صفحه ضربه بزنید</string>
+    <string name="double_tap_to_seek_enabled_title">فعال کردن دوبار ضربه زدن برای عقب و جلو کردن</string>
+    <string name="double_tap_to_seek_enabled_description">برای رفتن به عقب یا جلو، دو بار روی سمت چپ یا راست ویدیو ضربه بزنید</string>
+    <string name="double_tap_to_seek_seconds_title">برای نمایش مدت رد‌شدن، دو بار ضربه بزنید</string>
+    <string name="double_tap_to_seek_seconds_description">ثانیه‌هایی که هنگام دوبار ضربه زدن روی ویدیو باید رد شوند</string>
+    <string name="hide_native_seek_buttons_title">مخفی کردن دکمه‌های جستجوی بومی</string>
+    <string name="hide_native_seek_buttons_description">دکمه‌های عقب و جلو بردن را از کنترل‌های پخش‌کننده ویدیو پنهان کنید</string>
+    <string name="remember_video_playback_position_enabled_title">موقعیت پخش را به خاطر بسپارید</string>
+    <string name="remember_video_playback_position_enabled_description">ادامه پخش ویدیوها از آخرین موقعیت متوقف شده</string>
 </resources>

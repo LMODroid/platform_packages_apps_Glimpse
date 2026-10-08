@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+ * SPDX-FileCopyrightText: The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -25,9 +25,6 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.request.RequestOptions
-import com.google.android.material.appbar.AppBarLayout
-import com.google.android.material.appbar.MaterialToolbar
-import com.google.android.material.shape.MaterialShapeDrawable
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
@@ -55,10 +52,8 @@ class AlbumsFragment : Fragment(R.layout.fragment_albums) {
     private val intentsViewModel by activityViewModels<IntentsViewModel>()
 
     // Views
-    private val appBarLayout by getViewProperty<AppBarLayout>(R.id.appBarLayout)
     private val noMediaLinearLayout by getViewProperty<LinearLayout>(R.id.noMediaLinearLayout)
     private val recyclerView by getViewProperty<RecyclerView>(R.id.recyclerView)
-    private val toolbar by getViewProperty<MaterialToolbar>(R.id.toolbar)
 
     // RecyclerView
     private val adapter by lazy {
@@ -124,20 +119,6 @@ class AlbumsFragment : Fragment(R.layout.fragment_albums) {
         super.onViewCreated(view, savedInstanceState)
 
         // Insets
-        ViewCompat.setOnApplyWindowInsetsListener(toolbar) { _, windowInsets ->
-            val insets = windowInsets.getInsets(
-                WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
-            )
-
-            toolbar.updatePadding(
-                insets,
-                start = true,
-                end = true,
-            )
-
-            windowInsets
-        }
-
         ViewCompat.setOnApplyWindowInsetsListener(recyclerView) { _, windowInsets ->
             val insets = windowInsets.getInsets(
                 WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
@@ -153,8 +134,6 @@ class AlbumsFragment : Fragment(R.layout.fragment_albums) {
         }
 
         val context = requireContext()
-
-        appBarLayout.statusBarForeground = MaterialShapeDrawable.createWithElevationOverlay(context)
 
         recyclerView.layoutManager = AlbumThumbnailLayoutManager(context)
         recyclerView.adapter = adapter

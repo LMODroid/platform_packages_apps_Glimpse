@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/general_header">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="edge_tap_navigation_enabled"
+            app:summary="@string/edge_tap_navigation_enabled_description"
+            app:title="@string/edge_tap_navigation_enable_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/video_header">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="double_tap_to_seek_enabled"
+            app:summary="@string/double_tap_to_seek_enabled_description"
+            app:title="@string/double_tap_to_seek_enabled_title" />
+
+        <SeekBarPreference
+            android:max="30"
+            app:defaultValue="10"
+            app:dependency="double_tap_to_seek_enabled"
+            app:iconSpaceReserved="false"
+            app:key="double_tap_to_seek_seconds"
+            app:min="5"
+            app:seekBarIncrement="5"
+            app:showSeekBarValue="true"
+            app:summary="@string/double_tap_to_seek_seconds_description"
+            app:title="@string/double_tap_to_seek_seconds_title" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="hide_native_seek_buttons"
+            app:summary="@string/hide_native_seek_buttons_description"
+            app:title="@string/hide_native_seek_buttons_title" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="remember_video_playback_position_enabled"
+            app:summary="@string/remember_video_playback_position_enabled_description"
+            app:title="@string/remember_video_playback_position_enabled_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -117,4 +117,19 @@
     <string name="set_wallpaper_lock_screen">Zaklenjen zaslon</string>
     <string name="set_wallpaper_both">Domači in zaklenjen zaslon</string>
     <string name="warning_bin_time_period">Datoteke bodo trajno izbrisane po 30 dneh.</string>
+    <string name="motion_photo_show_video">Prikaži videoposnetek</string>
+    <string name="motion_photo_show_photo">Prikaži fotografijo</string>
+    <string name="title_activity_settings">Nastavitve</string>
+    <string name="general_header">Splošno</string>
+    <string name="video_header">Videoposnetek</string>
+    <string name="edge_tap_navigation_enable_title">Robno krmarjenje</string>
+    <string name="edge_tap_navigation_enabled_description">Tapnite levi ali desni rob zaslona za krmarjenje med predstavnostjo</string>
+    <string name="double_tap_to_seek_enabled_title">Omogoči dvojni tap za iskanje</string>
+    <string name="double_tap_to_seek_enabled_description">Dvakrat tapnite levo ali desno stran videoposnetka za preskok nazaj ali naprej</string>
+    <string name="double_tap_to_seek_seconds_title">Dolžina dvojnega tapa za iskanje</string>
+    <string name="double_tap_to_seek_seconds_description">Sekund za preskok ob uporabi dvojnega tapa videoposnetka</string>
+    <string name="hide_native_seek_buttons_title">Skrij vgrajene gumbe za iskanje</string>
+    <string name="hide_native_seek_buttons_description">Skrij gumba za previjanje iz kontrolnikov predvajalnika videoposnetkov</string>
+    <string name="remember_video_playback_position_enabled_title">Zaponi si položaj predvajanja</string>
+    <string name="remember_video_playback_position_enabled_description">Nadaljuj videoposnetke od zadnjega ustavljenega položaja</string>
 </resources>
