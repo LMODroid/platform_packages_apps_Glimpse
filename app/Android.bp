@@ -86,10 +86,7 @@ android_app {
         shrink_resources: true,
     },
 
-    aaptflags: [
-        "--rename-manifest-package",
-        "com.libremobileos.glimpse",
-    ],
+    package_name: "com.libremobileos.glimpse",
 
 }
 
